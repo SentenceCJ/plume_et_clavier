@@ -1,68 +1,147 @@
 <!doctype html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Qui suis-je - Plume et Clavier</title>
-  <meta name="description" content="Plume et Clavier, écrivaine publique : rédaction, correction, ateliers d'écriture, biographies et accompagnement par les mots." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Qui suis-je - Plume et Clavier</title>
+    <meta
+      name="description"
+      content="Plume et Clavier, écrivaine publique : rédaction, correction, ateliers d'écriture, biographies et accompagnement par les mots."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="burger" aria-label="Ouvrir le menu"
+        ><span></span><span></span><span></span
+      ></label>
+      <a href="index.html" class="brand" aria-label="Accueil Plume et Clavier">
+        <img
+          src="assets/logo.png"
+          alt="Plume et Clavier - Écrivaine publique"
+        />
+      </a>
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="index.html" data-page="index">Accueil</a>
+        <a href="qui-suis-je.html" data-page="qui" class="active"
+          >Qui suis-je ?</a
+        >
+        <a href="prestations.html" data-page="prestations">Prestations</a>
+        <a href="actualites.html" data-page="actualites">Actualités</a>
+        <a href="tarifs.html" data-page="tarifs">Tarifs</a>
+        <a href="contact.html" data-page="contact">Contact</a>
+      </nav>
+    </header>
 
-<header class="site-header" data-header>
-  <input type="checkbox" id="menu-toggle" class="menu-toggle" />
-  <label for="menu-toggle" class="burger" aria-label="Ouvrir le menu"><span></span><span></span><span></span></label>
-  <a href="index.html" class="brand" aria-label="Accueil Plume et Clavier">
-    <img src="assets/logo.png" alt="Plume et Clavier - Écrivaine publique" />
-  </a>
-  <nav class="nav" aria-label="Navigation principale">
-    <a href="index.html" data-page="index">Accueil</a>
-    <a href="qui-suis-je.html" data-page="qui" class="active">Qui suis-je ?</a>
-    <a href="prestations.html" data-page="prestations">Prestations</a>
-    <a href="actualites.html" data-page="actualites">Actualités</a>
-    <a href="tarifs.html" data-page="tarifs">Tarifs</a>
-    <a href="contact.html" data-page="contact">Contact</a>
-  </nav>
-</header>
+    <main>
+      <section class="page-hero reveal">
+        <p class="tag">Qui suis-je ?</p>
+        <h1>Marianne Lamor, une plume précise et attentive.</h1>
+        <p class="lead">
+          Professeur de mathématiques et de sciences physiques, autrice de
+          textes littéraires, techniques et scientifiques, Marianne accompagne
+          aujourd’hui celles et ceux qui souhaitent écrire, corriger ou
+          transmettre.
+        </p>
+      </section>
+      <section class="profile-layout section">
+        <div class="profile-image reveal">
+          <img
+            src="assets/_HR_8315.jpg"
+            alt="Portrait temporaire de Marianne Lamor"
+          />
+          <div class="image-caption">Marianne LAMOR</div>
+          <div class="image-caption">Crédit Photo : Christophe Paupard</div>
+        </div>
+        <div class="profile-text reveal delay-1">
+          <p class="tag">Présentation</p>
+          <h2>Des sciences aux mots, un même goût de la clarté.</h2>
+          <p>
+            Ma première activité ? Professeur de mathématiques et de sciences
+            physiques. En parallèle, j’ai toujours écrit et corrigé des
+            documents, littéraires, techniques, scientifiques.
+          </p>
+          <p>
+            Aujourd’hui, je propose des prestations en écriture. Je relis,
+            corrige et reformule, si nécessaire, vos thèses, rapports, romans. À
+            votre écoute, je rédige pour vous discours, notes, lettres
+            administratives ou personnelles, récits de vie, d’événements, de
+            voyages et autres textes.
+          </p>
+          <p>
+            J’anime également des ateliers d’écriture inspirés de l’OULIPO,
+            ludiques et accessibles à tous publics.
+          </p>
+          <div class="voltaire-badge">
+            <strong>Certificat Voltaire</strong
+            ><span>Niveau expert — 3GGG4AL</span>
+          </div>
+        </div>
+      </section>
+      <section class="specialties section reveal">
+        <div class="section-heading">
+          <p class="tag">Spécialités</p>
+          <h2>Des domaines d’intervention variés.</h2>
+        </div>
+        <div class="specialty-cloud">
+          <span>Accompagnement par l’écriture</span
+          ><span>Ateliers d’écriture</span><span>Biographie généraliste</span
+          ><span>Correction de manuscrits</span><span>Thèses et mémoires</span
+          ><span>Correspondance administrative</span><span>CV</span
+          ><span>Discours et éloges funèbres</span
+          ><span>Notices techniques</span><span>Modes d’emploi</span
+          ><span>Transcriptions</span><span>PV de réunions</span>
+        </div>
+      </section>
+      <section class="values-strip reveal">
+        <article>
+          <h3>Écoute</h3>
+          <p>Comprendre la demande avant de choisir les mots.</p>
+        </article>
+        <article>
+          <h3>Précision</h3>
+          <p>Rendre le texte clair, structuré et utile.</p>
+        </article>
+        <article>
+          <h3>Discrétion</h3>
+          <p>Respecter chaque histoire, chaque document, chaque contexte.</p>
+        </article>
+      </section>
+    </main>
 
-<main>
+    <footer class="footer reveal">
+      <div>
+        <img class="footer-logo" src="assets/logo.png" alt="Plume et Clavier" />
+        <p>© Plume et Clavier — Écrivaine publique</p>
+      </div>
+      <div class="footer-links">
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="cgv.html">CGV</a>
+      </div>
+      <div class="socials">
+        <a href="#" aria-label="Instagram"
+          ><svg viewBox="0 0 24 24">
+            <path
+              d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 4a4 4 0 1 1 0 8 4 4 0 0 1 0-8Zm0 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm5.25-2.75a1 1 0 1 1 0 2 1 1 0 0 1 0-2Z"
+            /></svg
+        ></a>
+        <a href="#" aria-label="LinkedIn"
+          ><svg viewBox="0 0 24 24">
+            <path
+              d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.6h.05c.53-1 1.84-2.05 3.8-2.05 4.06 0 4.81 2.67 4.81 6.14V21h-4v-5.59c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.95V21h-4V9Z"
+            /></svg
+        ></a>
+      </div>
+      <p class="credit">Site réalisé par Antoine Macheda</p>
+    </footer>
 
-<section class="page-hero reveal"><p class="tag">Qui suis-je ?</p><h1>Marianne Lamor, une plume précise et attentive.</h1><p class="lead">Professeur de mathématiques et de sciences physiques, autrice de textes littéraires, techniques et scientifiques, Marianne accompagne aujourd’hui celles et ceux qui souhaitent écrire, corriger ou transmettre.</p></section>
-<section class="profile-layout section">
-  <div class="profile-image reveal"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=900&q=80" alt="Portrait temporaire de Marianne Lamor" /><div class="image-caption">Image temporaire à remplacer par le portrait de Marianne.</div></div>
-  <div class="profile-text reveal delay-1">
-    <p class="tag">Présentation</p><h2>Des sciences aux mots, un même goût de la clarté.</h2>
-    <p>Ma première activité ? Professeur de mathématiques et de sciences physiques. En parallèle, j’ai toujours écrit et corrigé des documents, littéraires, techniques, scientifiques.</p>
-    <p>Aujourd’hui, je propose des prestations en écriture. Je relis, corrige et reformule, si nécessaire, vos thèses, rapports, romans. À votre écoute, je rédige pour vous discours, notes, lettres administratives ou personnelles, récits de vie, d’événements, de voyages et autres textes.</p>
-    <p>J’anime également des ateliers d’écriture inspirés de l’OULIPO, ludiques et accessibles à tous publics.</p>
-    <div class="voltaire-badge"><strong>Certificat Voltaire</strong><span>Niveau expert — 3GGG4AL</span></div>
-  </div>
-</section>
-<section class="specialties section reveal"><div class="section-heading"><p class="tag">Spécialités</p><h2>Des domaines d’intervention variés.</h2></div><div class="specialty-cloud">
-<span>Accompagnement par l’écriture</span><span>Ateliers d’écriture</span><span>Biographie généraliste</span><span>Correction de manuscrits</span><span>Thèses et mémoires</span><span>Correspondance administrative</span><span>CV</span><span>Discours et éloges funèbres</span><span>Notices techniques</span><span>Modes d’emploi</span><span>Transcriptions</span><span>PV de réunions</span></div></section>
-<section class="values-strip reveal"><article><h3>Écoute</h3><p>Comprendre la demande avant de choisir les mots.</p></article><article><h3>Précision</h3><p>Rendre le texte clair, structuré et utile.</p></article><article><h3>Discrétion</h3><p>Respecter chaque histoire, chaque document, chaque contexte.</p></article></section>
-
-</main>
-
-<footer class="footer reveal">
-  <div>
-    <img class="footer-logo" src="assets/logo.png" alt="Plume et Clavier" />
-    <p>© Plume et Clavier — Écrivaine publique</p>
-  </div>
-  <div class="footer-links">
-    <a href="mentions-legales.html">Mentions légales</a>
-    <a href="cgv.html">CGV</a>
-  </div>
-  <div class="socials">
-    <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 4a4 4 0 1 1 0 8 4 4 0 0 1 0-8Zm0 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm5.25-2.75a1 1 0 1 1 0 2 1 1 0 0 1 0-2Z"/></svg></a>
-    <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.6h.05c.53-1 1.84-2.05 3.8-2.05 4.06 0 4.81 2.67 4.81 6.14V21h-4v-5.59c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.95V21h-4V9Z"/></svg></a>
-  </div>
-  <p class="credit">Site réalisé par Antoine Macheda</p>
-</footer>
-
-<script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
