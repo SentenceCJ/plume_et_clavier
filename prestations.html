@@ -1,63 +1,184 @@
 <!doctype html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Prestations - Plume et Clavier</title>
-  <meta name="description" content="Plume et Clavier, écrivaine publique : rédaction, correction, ateliers d'écriture, biographies et accompagnement par les mots." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prestations - Plume et Clavier</title>
+    <meta
+      name="description"
+      content="Plume et Clavier, écrivaine publique : rédaction, correction, ateliers d'écriture, biographies et accompagnement par les mots."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="burger" aria-label="Ouvrir le menu"
+        ><span></span><span></span><span></span
+      ></label>
+      <a href="index.html" class="brand" aria-label="Accueil Plume et Clavier">
+        <img
+          src="assets/logo.png"
+          alt="Plume et Clavier - Écrivaine publique"
+        />
+      </a>
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="index.html" data-page="index">Accueil</a>
+        <a href="qui-suis-je.html" data-page="qui">Qui suis-je ?</a>
+        <a href="prestations.html" data-page="prestations" class="active"
+          >Prestations</a
+        >
+        <a href="actualites.html" data-page="actualites">Actualités</a>
+        <a href="tarifs.html" data-page="tarifs">Tarifs</a>
+        <a href="contact.html" data-page="contact">Contact</a>
+      </nav>
+    </header>
 
-<header class="site-header" data-header>
-  <input type="checkbox" id="menu-toggle" class="menu-toggle" />
-  <label for="menu-toggle" class="burger" aria-label="Ouvrir le menu"><span></span><span></span><span></span></label>
-  <a href="index.html" class="brand" aria-label="Accueil Plume et Clavier">
-    <img src="assets/logo.png" alt="Plume et Clavier - Écrivaine publique" />
-  </a>
-  <nav class="nav" aria-label="Navigation principale">
-    <a href="index.html" data-page="index">Accueil</a>
-    <a href="qui-suis-je.html" data-page="qui">Qui suis-je ?</a>
-    <a href="prestations.html" data-page="prestations" class="active">Prestations</a>
-    <a href="actualites.html" data-page="actualites">Actualités</a>
-    <a href="tarifs.html" data-page="tarifs">Tarifs</a>
-    <a href="contact.html" data-page="contact">Contact</a>
-  </nav>
-</header>
+    <main>
+      <section class="page-hero reveal">
+        <p class="tag">Prestations</p>
+        <h1>Des accompagnements pensés autour de votre besoin.</h1>
+        <p class="lead">
+          Chaque texte demande une attention différente : expliquer, convaincre,
+          transmettre, raconter, corriger ou simplement remettre en forme avec
+          justesse.
+        </p>
+      </section>
+      <section class="service-list section">
+        <article class="service-row reveal">
+          <div class="service-icon">✍</div>
+          <div>
+            <p class="tag">Démarches</p>
+            <h2>Courriers, correspondances et documents administratifs</h2>
+            <p>
+              Je vous aide à formuler une demande, clarifier une situation,
+              rédiger une lettre officielle ou répondre à une démarche.
+              L’objectif est de produire un texte précis, lisible et adapté à
+              son destinataire.
+            </p>
+            <ul>
+              <li>Courriers administratifs</li>
+              <li>Demandes, recours, explications</li>
+              <li>CV, lettres et correspondances</li>
+            </ul>
+          </div>
+        </article>
+        <article class="service-row reverse reveal">
+          <div class="service-icon">▱</div>
+          <div>
+            <p class="tag">Transmission</p>
+            <h2>Biographies, récits de vie et souvenirs</h2>
+            <p>
+              Une biographie peut retracer un parcours complet, tandis qu’un
+              récit de vie plus court peut se concentrer sur un événement, un
+              voyage, une période ou quelques souvenirs. Une première rencontre
+              permet de cerner les attentes et le format.
+            </p>
+            <ul>
+              <li>Entretiens préparatoires</li>
+              <li>Récits personnels ou familiaux</li>
+              <li>Accompagnement jusqu’au livre imprimé si besoin</li>
+            </ul>
+          </div>
+        </article>
+        <article class="service-row reveal">
+          <div class="service-icon">⌁</div>
+          <div>
+            <p class="tag">Relecture</p>
+            <h2>Correction de manuscrits, thèses, mémoires et rapports</h2>
+            <p>
+              Je relis, corrige et reformule vos textes pour renforcer leur
+              clarté, leur fluidité et leur niveau de langue, tout en respectant
+              votre propos et votre style.
+            </p>
+            <ul>
+              <li>Orthographe, syntaxe, ponctuation</li>
+              <li>Structure et cohérence</li>
+              <li>Documents littéraires, techniques ou scientifiques</li>
+            </ul>
+          </div>
+        </article>
+        <article class="service-row reverse reveal">
+          <div class="service-icon">☉</div>
+          <div>
+            <p class="tag">Oral</p>
+            <h2>Discours, notes et textes personnels</h2>
+            <p>
+              Certains textes doivent trouver le bon équilibre entre émotion,
+              naturel et précision : discours, hommages, éloges funèbres, notes,
+              lettres personnelles ou messages délicats.
+            </p>
+            <ul>
+              <li>Discours et prises de parole</li>
+              <li>Éloges et textes sensibles</li>
+              <li>Notes personnelles ou professionnelles</li>
+            </ul>
+          </div>
+        </article>
+        <article class="service-row reveal">
+          <div class="service-icon">✦</div>
+          <div>
+            <p class="tag">Ateliers</p>
+            <h2>Ateliers d’écriture et animations sur mesure</h2>
+            <p>
+              Inspirés de l’OULIPO, les ateliers sont ludiques, accessibles et
+              pensés pour libérer l’écriture. Ils peuvent être adaptés à un
+              public d’enfants, d’adultes, à une structure culturelle ou à un
+              événement.
+            </p>
+            <ul>
+              <li>Ateliers réguliers</li>
+              <li>Repas littéraires</li>
+              <li>Animations à inventer sur demande</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+      <section class="cta-panel reveal">
+        <div>
+          <p class="tag">Tarifs sur devis</p>
+          <h2>Chaque projet est unique.</h2>
+          <p>
+            Le tarif dépend de la nature du texte, du volume, des délais et du
+            niveau d’accompagnement souhaité.
+          </p>
+        </div>
+        <a class="btn btn-primary" href="contact.html">Demander un devis</a>
+      </section>
+    </main>
 
-<main>
+    <footer class="footer reveal">
+      <div>
+        <img class="footer-logo" src="assets/logo.png" alt="Plume et Clavier" />
+        <p>© Plume et Clavier — Écrivaine publique</p>
+      </div>
+      <div class="footer-links">
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="cgv.html">CGV</a>
+      </div>
+      <div class="socials">
+        <a href="#" aria-label="Instagram"
+          ><svg viewBox="0 0 24 24">
+            <path
+              d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 4a4 4 0 1 1 0 8 4 4 0 0 1 0-8Zm0 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm5.25-2.75a1 1 0 1 1 0 2 1 1 0 0 1 0-2Z"
+            /></svg
+        ></a>
+        <a href="#" aria-label="LinkedIn"
+          ><svg viewBox="0 0 24 24">
+            <path
+              d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.6h.05c.53-1 1.84-2.05 3.8-2.05 4.06 0 4.81 2.67 4.81 6.14V21h-4v-5.59c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.95V21h-4V9Z"
+            /></svg
+        ></a>
+      </div>
+      <p class="credit">Site réalisé par Antoine Macheda</p>
+    </footer>
 
-<section class="page-hero reveal"><p class="tag">Prestations</p><h1>Des accompagnements pensés autour de votre besoin.</h1><p class="lead">Chaque texte demande une attention différente : expliquer, convaincre, transmettre, raconter, corriger ou simplement remettre en forme avec justesse.</p></section>
-<section class="service-list section">
-  <article class="service-row reveal"><div class="service-icon">✍</div><div><p class="tag">Démarches</p><h2>Courriers, correspondances et documents administratifs</h2><p>Je vous aide à formuler une demande, clarifier une situation, rédiger une lettre officielle ou répondre à une démarche. L’objectif est de produire un texte précis, lisible et adapté à son destinataire.</p><ul><li>Courriers administratifs</li><li>Demandes, recours, explications</li><li>CV, lettres et correspondances</li></ul></div></article>
-  <article class="service-row reverse reveal"><div class="service-icon">▱</div><div><p class="tag">Transmission</p><h2>Biographies, récits de vie et souvenirs</h2><p>Une biographie peut retracer un parcours complet, tandis qu’un récit de vie plus court peut se concentrer sur un événement, un voyage, une période ou quelques souvenirs. Une première rencontre permet de cerner les attentes et le format.</p><ul><li>Entretiens préparatoires</li><li>Récits personnels ou familiaux</li><li>Accompagnement jusqu’au livre imprimé si besoin</li></ul></div></article>
-  <article class="service-row reveal"><div class="service-icon">⌁</div><div><p class="tag">Relecture</p><h2>Correction de manuscrits, thèses, mémoires et rapports</h2><p>Je relis, corrige et reformule vos textes pour renforcer leur clarté, leur fluidité et leur niveau de langue, tout en respectant votre propos et votre style.</p><ul><li>Orthographe, syntaxe, ponctuation</li><li>Structure et cohérence</li><li>Documents littéraires, techniques ou scientifiques</li></ul></div></article>
-  <article class="service-row reverse reveal"><div class="service-icon">☉</div><div><p class="tag">Oral</p><h2>Discours, notes et textes personnels</h2><p>Certains textes doivent trouver le bon équilibre entre émotion, naturel et précision : discours, hommages, éloges funèbres, notes, lettres personnelles ou messages délicats.</p><ul><li>Discours et prises de parole</li><li>Éloges et textes sensibles</li><li>Notes personnelles ou professionnelles</li></ul></div></article>
-  <article class="service-row reveal"><div class="service-icon">✦</div><div><p class="tag">Ateliers</p><h2>Ateliers d’écriture et animations sur mesure</h2><p>Inspirés de l’OULIPO, les ateliers sont ludiques, accessibles et pensés pour libérer l’écriture. Ils peuvent être adaptés à un public d’enfants, d’adultes, à une structure culturelle ou à un événement.</p><ul><li>Ateliers réguliers</li><li>Repas littéraires</li><li>Animations à inventer sur demande</li></ul></div></article>
-</section>
-<section class="cta-panel reveal"><div><p class="tag">Tarifs sur devis</p><h2>Chaque projet est unique.</h2><p>Le tarif dépend de la nature du texte, du volume, des délais et du niveau d’accompagnement souhaité.</p></div><a class="btn btn-primary" href="contact.html">Demander un devis</a></section>
-
-</main>
-
-<footer class="footer reveal">
-  <div>
-    <img class="footer-logo" src="assets/logo.png" alt="Plume et Clavier" />
-    <p>© Plume et Clavier — Écrivaine publique</p>
-  </div>
-  <div class="footer-links">
-    <a href="mentions-legales.html">Mentions légales</a>
-    <a href="cgv.html">CGV</a>
-  </div>
-  <div class="socials">
-    <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 4a4 4 0 1 1 0 8 4 4 0 0 1 0-8Zm0 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm5.25-2.75a1 1 0 1 1 0 2 1 1 0 0 1 0-2Z"/></svg></a>
-    <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.6h.05c.53-1 1.84-2.05 3.8-2.05 4.06 0 4.81 2.67 4.81 6.14V21h-4v-5.59c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.95V21h-4V9Z"/></svg></a>
-  </div>
-  <p class="credit">Site réalisé par Antoine Macheda</p>
-</footer>
-
-<script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
