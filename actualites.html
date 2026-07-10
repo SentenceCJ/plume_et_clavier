@@ -8,33 +8,253 @@
       name="description"
       content="Plume et Clavier, écrivaine publique : rédaction, correction, ateliers d'écriture, biographies et accompagnement par les mots."
     />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="style.css" />
+
+    <style>
+      .news-feature {
+        display: grid;
+        grid-template-columns: 1.15fr 0.85fr;
+        gap: 40px;
+        align-items: center;
+        margin: 90px auto;
+      }
+
+      .news-feature > div {
+        background: #fff;
+        padding: 60px;
+        border-radius: 34px;
+        box-shadow: 0 25px 60px rgba(0, 0, 0, 0.08);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .news-feature > div::before {
+        content: "";
+        position: absolute;
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        background: #b5baa620;
+        top: -70px;
+        left: -70px;
+      }
+
+      .news-feature h2 {
+        font-size: clamp(42px, 4vw, 62px);
+        line-height: 1.05;
+        margin: 18px 0 30px;
+        color: #73549b;
+      }
+
+      .news-feature p {
+        font-size: 18px;
+        line-height: 1.9;
+        color: #555;
+      }
+
+      .news-feature aside {
+        position: relative;
+        min-height: 520px;
+        border-radius: 34px;
+        overflow: hidden;
+        box-shadow: 0 30px 70px rgba(0, 0, 0, 0.15);
+        transform: rotate(2deg);
+        transition: transform 0.45s ease;
+        isolation: isolate;
+      }
+
+      .news-feature aside:hover {
+        transform: rotate(0deg) scale(1.02);
+      }
+
+      .news-feature aside img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 34px;
+        transition: transform 0.8s ease;
+      }
+
+      .news-feature aside:hover img {
+        transform: scale(1.08);
+      }
+
+      .news-feature aside::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: 34px;
+        background: linear-gradient(
+          180deg,
+          rgba(115, 84, 155, 0.04) 0%,
+          rgba(115, 84, 155, 0.08) 36%,
+          rgba(38, 34, 48, 0.32) 100%
+        );
+        pointer-events: none;
+        z-index: 1;
+      }
+
+      .news-feature aside::before {
+        content: "";
+        position: absolute;
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        border: 2px solid rgba(220, 121, 90, 0.62);
+        top: -45px;
+        right: -45px;
+        z-index: 3;
+        pointer-events: none;
+      }
+
+      .photo-badge {
+        position: absolute;
+        left: 26px;
+        top: 26px;
+        padding: 12px 18px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(14px);
+        color: white;
+        font-size: 13px;
+        font-weight: 800;
+        letter-spacing: 1.1px;
+        text-transform: uppercase;
+        z-index: 4;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+      }
+
+      .photo-credit {
+        position: absolute;
+        right: 26px;
+        bottom: 24px;
+        z-index: 4;
+        color: rgba(255, 255, 255, 0.82);
+        font-size: 12px;
+        font-weight: 600;
+        background: rgba(38, 34, 48, 0.25);
+        backdrop-filter: blur(12px);
+        padding: 8px 12px;
+        border-radius: 999px;
+      }
+
+      @media (max-width: 950px) {
+        .news-feature {
+          grid-template-columns: 1fr;
+          gap: 28px;
+          margin: 60px auto;
+        }
+
+        .news-feature > div {
+          padding: 36px 28px;
+        }
+
+        .news-feature aside {
+          min-height: 430px;
+          border-radius: 30px;
+          transform: none;
+        }
+
+        .news-feature aside img,
+        .news-feature aside::after {
+          border-radius: 30px;
+        }
+
+        .news-feature aside:hover {
+          transform: scale(1.01);
+        }
+      }
+
+      @media (max-width: 650px) {
+        .news-feature {
+          margin: 45px auto;
+        }
+
+        .news-feature > div {
+          padding: 30px 24px;
+          border-radius: 26px;
+        }
+
+        .news-feature h2 {
+          font-size: 34px;
+        }
+
+        .news-feature p {
+          font-size: 16px;
+        }
+
+        .news-feature aside {
+          min-height: 380px;
+          border-radius: 28px;
+        }
+
+        .news-feature aside img,
+        .news-feature aside::after {
+          border-radius: 28px;
+        }
+
+        .photo-badge {
+          left: 20px;
+          top: 20px;
+          font-size: 11px;
+          padding: 10px 14px;
+        }
+
+        .photo-credit {
+          right: 20px;
+          bottom: 20px;
+          font-size: 11px;
+        }
+
+        .news-feature aside::before {
+          width: 130px;
+          height: 130px;
+          top: -45px;
+          right: -45px;
+        }
+      }
+
+      @media (max-width: 420px) {
+        .news-feature aside {
+          min-height: 340px;
+        }
+      }
+    </style>
   </head>
+
   <body>
     <header class="site-header" data-header>
       <input type="checkbox" id="menu-toggle" class="menu-toggle" />
-      <label for="menu-toggle" class="burger" aria-label="Ouvrir le menu"
-        ><span></span><span></span><span></span
-      ></label>
+
+      <label for="menu-toggle" class="burger" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </label>
+
       <a href="index.html" class="brand" aria-label="Accueil Plume et Clavier">
         <img
           src="assets/logo.png"
           alt="Plume et Clavier - Écrivaine publique"
         />
       </a>
+
       <nav class="nav" aria-label="Navigation principale">
         <a href="index.html" data-page="index">Accueil</a>
         <a href="qui-suis-je.html" data-page="qui">Qui suis-je ?</a>
         <a href="prestations.html" data-page="prestations">Prestations</a>
-        <a href="actualites.html" data-page="actualites" class="active"
-          >Actualités</a
-        >
+        <a href="actualites.html" data-page="actualites" class="active">
+          Actualités
+        </a>
         <a href="tarifs.html" data-page="tarifs">Tarifs</a>
         <a href="contact.html" data-page="contact">Contact</a>
       </nav>
@@ -43,263 +263,14 @@
     <main>
       <section class="page-hero news-hero reveal">
         <p class="tag">Agenda & actualités</p>
+
         <h1>Les ateliers, rencontres et projets de Marianne Lamor.</h1>
+
         <p class="lead">
           Retrouvez les ateliers d’écriture, événements culturels,
           collaborations et animations portées par Plume et Clavier.
         </p>
       </section>
-      <style>
-        .news-feature {
-          display: grid;
-          grid-template-columns: 1.15fr 0.85fr;
-          gap: 40px;
-          align-items: center;
-          margin: 90px auto;
-        }
-
-        .news-feature > div {
-          background: #fff;
-
-          padding: 60px;
-
-          border-radius: 34px;
-
-          box-shadow: 0 25px 60px rgba(0, 0, 0, 0.08);
-
-          position: relative;
-
-          overflow: hidden;
-        }
-
-        .news-feature > div::before {
-          content: "";
-
-          position: absolute;
-
-          width: 180px;
-          height: 180px;
-
-          border-radius: 50%;
-
-          background: #b5baa620;
-
-          top: -70px;
-          left: -70px;
-        }
-
-        .news-feature h2 {
-          font-size: clamp(42px, 4vw, 62px);
-
-          line-height: 1.05;
-
-          margin: 18px 0 30px;
-
-          color: #73549b;
-        }
-
-        .news-feature p {
-          font-size: 18px;
-
-          line-height: 1.9;
-
-          color: #555;
-        }
-
-        .news-feature aside {
-          position: relative;
-
-          border-radius: 34px;
-
-          overflow: hidden;
-
-          min-height: 520px;
-
-          box-shadow: 0 30px 70px rgba(0, 0, 0, 0.15);
-
-          transform: rotate(2deg);
-
-          transition: 0.5s;
-        }
-
-        .news-feature aside:hover {
-          transform: rotate(0deg) scale(1.02);
-        }
-
-        .news-feature aside img {
-          width: 100%;
-          height: 100%;
-
-          object-fit: cover;
-
-          display: block;
-
-          transition: 0.8s;
-        }
-
-        .news-feature aside:hover img {
-          transform: scale(1.08);
-        }
-
-        .image-overlay {
-          position: absolute;
-
-          inset: 0;
-
-          display: flex;
-
-          flex-direction: column;
-
-          justify-content: flex-end;
-
-          padding: 40px;
-
-          background: linear-gradient(
-            to top,
-            rgba(33, 28, 43, 0.9),
-            rgba(33, 28, 43, 0.45),
-            rgba(33, 28, 43, 0.1)
-          );
-        }
-
-        .image-overlay span {
-          color: #dc795a;
-
-          font-size: 13px;
-
-          letter-spacing: 2px;
-
-          text-transform: uppercase;
-
-          font-weight: 700;
-
-          margin-bottom: 12px;
-        }
-
-        .image-overlay h3 {
-          color: white;
-
-          font-size: 40px;
-
-          line-height: 1.1;
-
-          margin: 0;
-        }
-
-        .image-overlay::before {
-          content: "";
-
-          position: absolute;
-
-          width: 160px;
-          height: 160px;
-
-          border-radius: 50%;
-
-          border: 2px solid rgba(220, 121, 90, 0.55);
-
-          top: -45px;
-          right: -45px;
-        }
-
-        @media (max-width: 950px) {
-          .news-feature {
-            grid-template-columns: 1fr;
-            gap: 28px;
-            margin: 60px auto;
-          }
-
-          .news-feature > div {
-            padding: 36px 28px;
-          }
-
-          .news-feature aside {
-            min-height: 430px;
-            border-radius: 30px;
-            transform: none;
-            background: none;
-          }
-
-          .news-feature aside img {
-            position: absolute;
-            inset: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-          }
-
-          .image-overlay {
-            padding: 32px;
-            justify-content: flex-end;
-            background: linear-gradient(
-              to top,
-              rgba(38, 34, 48, 0.92),
-              rgba(38, 34, 48, 0.45),
-              rgba(38, 34, 48, 0.08)
-            );
-          }
-
-          .image-overlay h3 {
-            max-width: 95%;
-            font-size: 34px;
-            line-height: 1.05;
-          }
-        }
-
-        @media (max-width: 650px) {
-          .news-feature {
-            margin: 45px auto;
-          }
-
-          .news-feature > div {
-            padding: 30px 24px;
-            border-radius: 26px;
-          }
-
-          .news-feature h2 {
-            font-size: 34px;
-          }
-
-          .news-feature p {
-            font-size: 16px;
-          }
-
-          .news-feature aside {
-            min-height: 380px;
-            border-radius: 28px;
-          }
-
-          .image-overlay {
-            padding: 26px;
-          }
-
-          .image-overlay span {
-            font-size: 11px;
-            letter-spacing: 1.7px;
-          }
-
-          .image-overlay h3 {
-            font-size: 28px;
-          }
-
-          .image-overlay::before {
-            width: 130px;
-            height: 130px;
-            top: -45px;
-            right: -45px;
-          }
-        }
-
-        @media (max-width: 420px) {
-          .news-feature aside {
-            min-height: 340px;
-          }
-
-          .image-overlay h3 {
-            font-size: 25px;
-          }
-        }
-      </style>
 
       <section class="news-feature section reveal">
         <div>
@@ -320,49 +291,48 @@
         </div>
 
         <aside>
-          <img src="assets/tableronde.jpg" alt="Atelier d'écriture" />
+          <img src="assets/book.jpg" alt="Atelier d'écriture" />
 
-          <div class="image-overlay">
-            <span>Ateliers d'écriture</span>
+          <div class="photo-badge">Ateliers d'écriture</div>
 
-            <h3>
-              Écrire ensemble, partager des idées et laisser la créativité
-              prendre sa place.
-            </h3>
-            <div class="image-caption" style="color: white">
-              Crédit Photo : Christophe Paupard
-            </div>
-          </div>
+          <!-- <div class="photo-credit">Crédit photo : Christophe Paupard</div> -->
         </aside>
       </section>
+
       <section class="section">
         <div class="section-heading reveal">
           <p class="tag">Prochains rendez-vous</p>
           <h2>Agenda 2026</h2>
         </div>
+
         <div class="timeline">
           <article class="timeline-item reveal">
             <div class="timeline-date">
               <span>Enfants</span><strong>Lèguevin</strong>
             </div>
+
             <div class="timeline-content">
               <h3>Ateliers pour enfants</h3>
               <p>Ateliers organisés pour l’association Planet’Création.</p>
             </div>
           </article>
+
           <article class="timeline-item reveal">
             <div class="timeline-date">
               <span>Vendredis</span><strong>18h30</strong>
             </div>
+
             <div class="timeline-content">
               <h3>Le Labo à Plumes</h3>
               <p>Ateliers pour adultes à Colomiers.</p>
             </div>
           </article>
+
           <article class="timeline-item reveal">
             <div class="timeline-date">
               <span>Samedis</span><strong>16h40</strong>
             </div>
+
             <div class="timeline-content">
               <h3>Plume vagabonde</h3>
               <p>
@@ -371,10 +341,12 @@
               </p>
             </div>
           </article>
+
           <article class="timeline-item reveal">
             <div class="timeline-date">
               <span>Adultes</span><strong>L’Union</strong>
             </div>
+
             <div class="timeline-content">
               <h3>Librairie Les Passantes</h3>
               <p>
@@ -383,37 +355,45 @@
               </p>
             </div>
           </article>
+
           <article class="timeline-item reveal">
             <div class="timeline-date">
               <span>21 février</span><strong>Colomiers</strong>
             </div>
+
             <div class="timeline-content">
               <h3>Jardin d’hiver</h3>
               <p>Atelier au théâtre de Colomiers.</p>
             </div>
           </article>
+
           <article class="timeline-item reveal">
             <div class="timeline-date">
               <span>23–24 février</span><strong>Saint-Cyprien</strong>
             </div>
+
             <div class="timeline-content">
               <h3>Les rubriques des magazines</h3>
               <p>Centre culturel Saint-Cyprien, de 10h à 17h.</p>
             </div>
           </article>
+
           <article class="timeline-item reveal">
             <div class="timeline-date">
               <span>20–21 avril</span><strong>Saint-Cyprien</strong>
             </div>
+
             <div class="timeline-content">
               <h3>Courrier, correspondances</h3>
               <p>Centre culturel Saint-Cyprien, de 10h à 17h.</p>
             </div>
           </article>
+
           <article class="timeline-item reveal">
             <div class="timeline-date">
               <span>23–24 avril</span><strong>Bellegarde</strong>
             </div>
+
             <div class="timeline-content">
               <h3>Comme un carnet de voyage</h3>
               <p>Atelier au Centre culturel Bellegarde.</p>
@@ -421,11 +401,13 @@
           </article>
         </div>
       </section>
+
       <section class="past-events section">
         <div class="section-heading reveal">
           <p class="tag">Retour sur 2025</p>
           <h2>Des expériences autour des mots et du partage.</h2>
         </div>
+
         <div class="events-grid">
           <article class="reveal">
             <span>31 janvier</span>
@@ -435,6 +417,7 @@
               centre à Colomiers, avec comédiens et bénévoles.
             </p>
           </article>
+
           <article class="reveal">
             <span>6 avril</span>
             <h3>Journée avec le collectif CALM</h3>
@@ -443,6 +426,7 @@
               l’animation.
             </p>
           </article>
+
           <article class="reveal">
             <span>28 juin</span>
             <h3>Promenade en écriture</h3>
@@ -451,11 +435,13 @@
               impressions.
             </p>
           </article>
+
           <article class="reveal">
             <span>1er au 3 juillet</span>
             <h3>Expérience en Ariège</h3>
             <p>Une immersion pour aborder l’écriture de nouvelles.</p>
           </article>
+
           <article class="reveal">
             <span>8 août</span>
             <h3>Erotic Picnic</h3>
@@ -464,6 +450,7 @@
               théâtre de Colomiers.
             </p>
           </article>
+
           <article class="reveal">
             <span>2025</span>
             <h3>Ateliers réguliers</h3>
@@ -474,30 +461,37 @@
           </article>
         </div>
       </section>
+
       <section class="collective-section section reveal">
         <div class="collective-card">
           <p class="tag">Collectif CALM</p>
           <h2>Collectif Avant Les Mots</h2>
+
           <p>
             Marianne Lamor fait partie du collectif CALM, une association
             d’animatrices d’ateliers d’écriture. Ensemble, elles proposent des
             animations concoctées en groupe.
           </p>
+
           <p class="collective-members">
             Malie Daubiné, Elise Vandel, Marianne Lamor, Adèle Naudy, Albane
             Froissart.
           </p>
         </div>
       </section>
+
       <section class="cta-panel reveal">
         <div>
           <p class="tag">Sur demande</p>
+
           <h2>Une animation à inventer ?</h2>
+
           <p>
             Je peux créer d’autres animations, adaptées à votre public, votre
             lieu ou votre événement.
           </p>
         </div>
+
         <a class="btn btn-primary" href="contact.html">Créer une animation</a>
       </section>
     </main>
@@ -507,24 +501,30 @@
         <img class="footer-logo" src="assets/logo.png" alt="Plume et Clavier" />
         <p>© Plume et Clavier — Écrivaine publique</p>
       </div>
+
       <div class="footer-links">
         <a href="mentions-legales.html">Mentions légales</a>
         <a href="cgv.html">CGV</a>
       </div>
+
       <div class="socials">
-        <a href="#" aria-label="Instagram"
-          ><svg viewBox="0 0 24 24">
+        <a href="#" aria-label="Instagram">
+          <svg viewBox="0 0 24 24">
             <path
               d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 4a4 4 0 1 1 0 8 4 4 0 0 1 0-8Zm0 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm5.25-2.75a1 1 0 1 1 0 2 1 1 0 0 1 0-2Z"
-            /></svg
-        ></a>
-        <a href="#" aria-label="LinkedIn"
-          ><svg viewBox="0 0 24 24">
+            />
+          </svg>
+        </a>
+
+        <a href="#" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24">
             <path
               d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.6h.05c.53-1 1.84-2.05 3.8-2.05 4.06 0 4.81 2.67 4.81 6.14V21h-4v-5.59c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.95V21h-4V9Z"
-            /></svg
-        ></a>
+            />
+          </svg>
+        </a>
       </div>
+
       <p class="credit">Site réalisé par Antoine Macheda</p>
     </footer>
 

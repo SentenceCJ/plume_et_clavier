@@ -1,56 +1,183 @@
 <!doctype html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CGV - Plume et Clavier</title>
-  <meta name="description" content="Plume et Clavier, écrivaine publique : rédaction, correction, ateliers d'écriture, biographies et accompagnement par les mots." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CGV - Plume et Clavier</title>
+    <meta
+      name="description"
+      content="Plume et Clavier, écrivaine publique : rédaction, correction, ateliers d'écriture, biographies et accompagnement par les mots."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="burger" aria-label="Ouvrir le menu"
+        ><span></span><span></span><span></span
+      ></label>
+      <a href="index.html" class="brand" aria-label="Accueil Plume et Clavier">
+        <img
+          src="assets/logo.png"
+          alt="Plume et Clavier - Écrivaine publique"
+        />
+      </a>
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="index.html" data-page="index">Accueil</a>
+        <a href="qui-suis-je.html" data-page="qui">Qui suis-je ?</a>
+        <a href="prestations.html" data-page="prestations">Prestations</a>
+        <a href="actualites.html" data-page="actualites">Actualités</a>
+        <a href="tarifs.html" data-page="tarifs">Tarifs</a>
+        <a href="contact.html" data-page="contact">Contact</a>
+      </nav>
+    </header>
 
-<header class="site-header" data-header>
-  <input type="checkbox" id="menu-toggle" class="menu-toggle" />
-  <label for="menu-toggle" class="burger" aria-label="Ouvrir le menu"><span></span><span></span><span></span></label>
-  <a href="index.html" class="brand" aria-label="Accueil Plume et Clavier">
-    <img src="assets/logo.png" alt="Plume et Clavier - Écrivaine publique" />
-  </a>
-  <nav class="nav" aria-label="Navigation principale">
-    <a href="index.html" data-page="index">Accueil</a>
-    <a href="qui-suis-je.html" data-page="qui">Qui suis-je ?</a>
-    <a href="prestations.html" data-page="prestations">Prestations</a>
-    <a href="actualites.html" data-page="actualites">Actualités</a>
-    <a href="tarifs.html" data-page="tarifs">Tarifs</a>
-    <a href="contact.html" data-page="contact">Contact</a>
-  </nav>
-</header>
+    <main>
+      <section class="page-hero reveal">
+        <p class="tag">Conditions</p>
+        <h1>Conditions Générales de Vente</h1>
+        <p class="lead">
+          Les présentes Conditions Générales de Vente définissent les modalités
+          de réalisation des prestations proposées par Plume &amp; Clavier.
+        </p>
+      </section>
 
-<main>
+      <section class="legal-content section reveal">
+        <h2>1. Objet</h2>
+        <p>
+          Les présentes Conditions Générales de Vente (CGV) régissent les
+          relations contractuelles entre Plume &amp; Clavier, entreprise
+          individuelle de Marianne Lamor, et toute personne souhaitant
+          bénéficier d'une prestation proposée sur le site.
+        </p>
 
-<section class="page-hero reveal"><p class="tag">Conditions</p><h1>Conditions générales de vente</h1><p class="lead">Cette page sert de base et devra être ajustée selon les modalités exactes de prestation.</p></section>
-<section class="legal-content section reveal"><h2>Prestations</h2><p>Plume et Clavier propose des prestations de rédaction, correction, reformulation, accompagnement à l’écriture et ateliers.</p><h2>Devis</h2><p>Les tarifs sont établis sur devis selon la nature de la demande, le volume, les délais et les modalités d’accompagnement.</p><h2>Validation</h2><p>Toute prestation débute après validation du devis et accord entre les parties.</p><h2>Confidentialité</h2><p>Les documents et informations transmis dans le cadre d’une prestation sont traités avec confidentialité.</p></section>
+        <h2>2. Prestations proposées</h2>
+        <p>Plume &amp; Clavier propose notamment les prestations suivantes :</p>
 
-</main>
+        <ul>
+          <li>Rédaction de contenus ;</li>
+          <li>Correction orthographique, grammaticale et stylistique ;</li>
+          <li>Relecture et reformulation ;</li>
+          <li>Biographies et récits de vie ;</li>
+          <li>Accompagnement à l'écriture ;</li>
+          <li>Animation d'ateliers d'écriture ;</li>
+          <li>Toute prestation personnalisée faisant l'objet d'un devis.</li>
+        </ul>
 
-<footer class="footer reveal">
-  <div>
-    <img class="footer-logo" src="assets/logo.png" alt="Plume et Clavier" />
-    <p>© Plume et Clavier — Écrivaine publique</p>
-  </div>
-  <div class="footer-links">
-    <a href="mentions-legales.html">Mentions légales</a>
-    <a href="cgv.html">CGV</a>
-  </div>
-  <div class="socials">
-    <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 4a4 4 0 1 1 0 8 4 4 0 0 1 0-8Zm0 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm5.25-2.75a1 1 0 1 1 0 2 1 1 0 0 1 0-2Z"/></svg></a>
-    <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.6h.05c.53-1 1.84-2.05 3.8-2.05 4.06 0 4.81 2.67 4.81 6.14V21h-4v-5.59c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.95V21h-4V9Z"/></svg></a>
-  </div>
-  <p class="credit">Site réalisé par Antoine Macheda</p>
-</footer>
+        <h2>3. Devis et commande</h2>
+        <p>
+          Toute demande fait l'objet d'un devis gratuit. La commande est réputée
+          acceptée dès réception du devis signé ou de toute validation écrite
+          (mail, courrier ou message).
+        </p>
 
-<script src="script.js"></script>
-</body>
+        <h2>4. Tarifs</h2>
+        <p>
+          Les tarifs sont exprimés en euros. Chaque prestation étant
+          personnalisée, le montant est indiqué sur le devis remis au client.
+        </p>
+
+        <h2>5. Modalités de paiement</h2>
+        <p>
+          Sauf indication contraire sur le devis, le règlement est exigible à la
+          livraison de la prestation. Les paiements peuvent être effectués par
+          virement bancaire ou tout autre moyen convenu entre les parties.
+        </p>
+
+        <h2>6. Délais de réalisation</h2>
+        <p>
+          Les délais sont donnés à titre indicatif lors de l'établissement du
+          devis. Ils peuvent être adaptés en fonction de la complexité du projet
+          ou de la réactivité du client lors des échanges.
+        </p>
+
+        <h2>7. Modifications</h2>
+        <p>
+          Les demandes de modifications raisonnables sont comprises dans la
+          prestation lorsqu'elles concernent le projet initial. Toute demande
+          supplémentaire importante pourra faire l'objet d'un devis
+          complémentaire.
+        </p>
+
+        <h2>8. Annulation</h2>
+        <p>
+          Toute annulation d'une commande déjà commencée pourra donner lieu à
+          une facturation correspondant au travail déjà réalisé.
+        </p>
+
+        <h2>9. Confidentialité</h2>
+        <p>
+          Tous les documents, informations et échanges confiés à Plume &amp;
+          Clavier sont traités de manière strictement confidentielle. Aucune
+          information ne sera communiquée à un tiers sans l'accord préalable du
+          client, sauf obligation légale.
+        </p>
+
+        <h2>10. Propriété intellectuelle</h2>
+        <p>
+          Les créations réalisées par Plume &amp; Clavier demeurent protégées
+          par le Code de la propriété intellectuelle. Leur utilisation est
+          autorisée dans le cadre défini avec le client après règlement complet
+          de la prestation, sauf mention contraire.
+        </p>
+
+        <h2>11. Responsabilité</h2>
+        <p>
+          Plume &amp; Clavier est tenue à une obligation de moyens dans la
+          réalisation de ses prestations. Sa responsabilité ne pourra être
+          engagée en cas d'utilisation des contenus contraire à leur destination
+          ou de modifications effectuées par le client après livraison.
+        </p>
+
+        <h2>12. Données personnelles</h2>
+        <p>
+          Les informations recueillies dans le cadre des prestations sont
+          utilisées uniquement pour leur bonne exécution et sont traitées
+          conformément au Règlement Général sur la Protection des Données
+          (RGPD).
+        </p>
+
+        <h2>13. Droit applicable</h2>
+        <p>
+          Les présentes CGV sont soumises au droit français. En cas de litige,
+          les parties s'efforceront de rechercher une solution amiable avant
+          toute procédure judiciaire.
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer reveal">
+      <div>
+        <img class="footer-logo" src="assets/logo.png" alt="Plume et Clavier" />
+        <p>© Plume et Clavier — Écrivaine publique</p>
+      </div>
+      <div class="footer-links">
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="cgv.html">CGV</a>
+      </div>
+      <div class="socials">
+        <a href="#" aria-label="Instagram"
+          ><svg viewBox="0 0 24 24">
+            <path
+              d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 4a4 4 0 1 1 0 8 4 4 0 0 1 0-8Zm0 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm5.25-2.75a1 1 0 1 1 0 2 1 1 0 0 1 0-2Z"
+            /></svg
+        ></a>
+        <a href="#" aria-label="LinkedIn"
+          ><svg viewBox="0 0 24 24">
+            <path
+              d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.6h.05c.53-1 1.84-2.05 3.8-2.05 4.06 0 4.81 2.67 4.81 6.14V21h-4v-5.59c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.95V21h-4V9Z"
+            /></svg
+        ></a>
+      </div>
+      <p class="credit">Site réalisé par Antoine Macheda</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>

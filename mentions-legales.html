@@ -1,56 +1,163 @@
 <!doctype html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mentions légales - Plume et Clavier</title>
-  <meta name="description" content="Plume et Clavier, écrivaine publique : rédaction, correction, ateliers d'écriture, biographies et accompagnement par les mots." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mentions légales - Plume et Clavier</title>
+    <meta
+      name="description"
+      content="Plume et Clavier, écrivaine publique : rédaction, correction, ateliers d'écriture, biographies et accompagnement par les mots."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="burger" aria-label="Ouvrir le menu"
+        ><span></span><span></span><span></span
+      ></label>
+      <a href="index.html" class="brand" aria-label="Accueil Plume et Clavier">
+        <img
+          src="assets/logo.png"
+          alt="Plume et Clavier - Écrivaine publique"
+        />
+      </a>
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="index.html" data-page="index">Accueil</a>
+        <a href="qui-suis-je.html" data-page="qui">Qui suis-je ?</a>
+        <a href="prestations.html" data-page="prestations">Prestations</a>
+        <a href="actualites.html" data-page="actualites">Actualités</a>
+        <a href="tarifs.html" data-page="tarifs">Tarifs</a>
+        <a href="contact.html" data-page="contact">Contact</a>
+      </nav>
+    </header>
 
-<header class="site-header" data-header>
-  <input type="checkbox" id="menu-toggle" class="menu-toggle" />
-  <label for="menu-toggle" class="burger" aria-label="Ouvrir le menu"><span></span><span></span><span></span></label>
-  <a href="index.html" class="brand" aria-label="Accueil Plume et Clavier">
-    <img src="assets/logo.png" alt="Plume et Clavier - Écrivaine publique" />
-  </a>
-  <nav class="nav" aria-label="Navigation principale">
-    <a href="index.html" data-page="index">Accueil</a>
-    <a href="qui-suis-je.html" data-page="qui">Qui suis-je ?</a>
-    <a href="prestations.html" data-page="prestations">Prestations</a>
-    <a href="actualites.html" data-page="actualites">Actualités</a>
-    <a href="tarifs.html" data-page="tarifs">Tarifs</a>
-    <a href="contact.html" data-page="contact">Contact</a>
-  </nav>
-</header>
+    <main>
+      <section class="page-hero reveal">
+        <p class="tag">Informations légales</p>
+        <h1>Mentions légales</h1>
+        <p class="lead">
+          Cette page est à compléter avec les informations officielles de
+          l’entreprise avant la mise en ligne.
+        </p>
+      </section>
+      <section class="legal-content section reveal">
+        <h2>Éditeur du site</h2>
+        <p>
+          Le site <strong>Plume &amp; Clavier</strong> est édité par
+          l'entreprise individuelle <strong>Plume &amp; Clavier</strong>, créée
+          par Marianne Lamor.<br /><br />
 
-<main>
+          9 allée du Morbihan<br />
+          31770 Colomiers – France<br /><br />
 
-<section class="page-hero reveal"><p class="tag">Informations légales</p><h1>Mentions légales</h1><p class="lead">Cette page est à compléter avec les informations officielles de l’entreprise avant la mise en ligne.</p></section>
-<section class="legal-content section reveal"><h2>Éditeur du site</h2><p>Plume et Clavier — Marianne Lamor<br />Adresse à compléter<br />Email à compléter<br />SIRET à compléter</p><h2>Responsable de publication</h2><p>Marianne Lamor.</p><h2>Hébergement</h2><p>Hébergeur à compléter selon la solution retenue.</p><h2>Propriété intellectuelle</h2><p>Les contenus présents sur ce site sont protégés. Toute reproduction nécessite une autorisation préalable.</p></section>
+          Tél. : 06 75 55 74 45<br />
+          E-mail :
+          <a href="mailto:contact@plumeetclavier.fr"
+            >contact@plumeetclavier.fr</a
+          ><br />
 
-</main>
+          SIRET : 917 571 416 00010<br />
+          Code APE : 9609Z
+        </p>
 
-<footer class="footer reveal">
-  <div>
-    <img class="footer-logo" src="assets/logo.png" alt="Plume et Clavier" />
-    <p>© Plume et Clavier — Écrivaine publique</p>
-  </div>
-  <div class="footer-links">
-    <a href="mentions-legales.html">Mentions légales</a>
-    <a href="cgv.html">CGV</a>
-  </div>
-  <div class="socials">
-    <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 4a4 4 0 1 1 0 8 4 4 0 0 1 0-8Zm0 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm5.25-2.75a1 1 0 1 1 0 2 1 1 0 0 1 0-2Z"/></svg></a>
-    <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.6h.05c.53-1 1.84-2.05 3.8-2.05 4.06 0 4.81 2.67 4.81 6.14V21h-4v-5.59c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.95V21h-4V9Z"/></svg></a>
-  </div>
-  <p class="credit">Site réalisé par Antoine Macheda</p>
-</footer>
+        <h2>Directrice de la publication</h2>
+        <p>
+          La directrice de la publication est Marianne Lamor, au sens de
+          l'article 93-2 de la loi n°82-652 du 29 juillet 1982.
+        </p>
 
-<script src="script.js"></script>
-</body>
+        <h2>Hébergement</h2>
+        <p>
+          Le site est hébergé par <strong>OVHcloud</strong>.<br /><br />
+
+          OVHcloud<br />
+          2 rue Kellermann – BP 80157<br />
+          59053 Roubaix Cedex 1 – France<br /><br />
+
+          <a href="https://www.ovhcloud.com/" target="_blank" rel="noopener">
+            https://www.ovhcloud.com/ </a
+          ><br /><br />
+
+          SAS au capital de 10 069 020 €<br />
+          RCS Roubaix-Tourcoing 424 761 419 00045<br />
+          Code APE : 2620Z<br />
+          TVA intracommunautaire : FR22 424761419
+        </p>
+
+        <h2>Propriété intellectuelle</h2>
+        <p>
+          La marque <strong>Plume &amp; Clavier</strong> ainsi que son logo sont
+          enregistrés auprès de l'Institut National de la Propriété
+          Intellectuelle (INPI). Toute reproduction, représentation, adaptation
+          ou exploitation, totale ou partielle, de la marque, du logo ou des
+          contenus du site est interdite sans autorisation préalable.
+        </p>
+
+        <p>
+          Le site internet ainsi que l'ensemble de ses contenus (textes,
+          photographies, illustrations, graphismes, logos, etc.) sont protégés
+          par le Code de la propriété intellectuelle.
+        </p>
+
+        <p>
+          Web design : <strong>Antoine Macheda</strong><br />
+          Photographies : <strong>Christophe Paupard</strong>.
+        </p>
+
+        <h2>Données personnelles (RGPD)</h2>
+        <p>
+          Les informations recueillies via le formulaire de contact (nom,
+          prénom, adresse e-mail, objet et contenu du message) sont uniquement
+          destinées au traitement de votre demande. Elles sont conservées
+          uniquement pendant la durée nécessaire et sont traitées conformément
+          au Règlement Général sur la Protection des Données (RGPD).
+        </p>
+
+        <h2>Contenus intégrés</h2>
+        <p>
+          Certaines pages du site peuvent intégrer des contenus provenant de
+          services tiers (vidéos, cartes, images ou autres médias). Ces contenus
+          se comportent exactement comme si le visiteur consultait directement
+          ces sites. Plume &amp; Clavier ne peut être tenue responsable du
+          contenu, de la politique de confidentialité ou du fonctionnement de
+          ces services tiers.
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer reveal">
+      <div>
+        <img class="footer-logo" src="assets/logo.png" alt="Plume et Clavier" />
+        <p>© Plume et Clavier — Écrivaine publique</p>
+      </div>
+      <div class="footer-links">
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="cgv.html">CGV</a>
+      </div>
+      <div class="socials">
+        <a href="#" aria-label="Instagram"
+          ><svg viewBox="0 0 24 24">
+            <path
+              d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 4a4 4 0 1 1 0 8 4 4 0 0 1 0-8Zm0 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm5.25-2.75a1 1 0 1 1 0 2 1 1 0 0 1 0-2Z"
+            /></svg
+        ></a>
+        <a href="#" aria-label="LinkedIn"
+          ><svg viewBox="0 0 24 24">
+            <path
+              d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.6h.05c.53-1 1.84-2.05 3.8-2.05 4.06 0 4.81 2.67 4.81 6.14V21h-4v-5.59c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.95V21h-4V9Z"
+            /></svg
+        ></a>
+      </div>
+      <p class="credit">Site réalisé par Antoine Macheda</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
