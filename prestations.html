@@ -36,393 +36,80 @@
         >
         <a href="actualites.html" data-page="actualites">Actualités</a>
         <a href="tarifs.html" data-page="tarifs">Tarifs</a>
+        <a href="coin-culture.html" data-page="culture">Coin culture</a>
         <a href="contact.html" data-page="contact">Contact</a>
       </nav>
     </header>
 
     <main>
+
       <section class="page-hero reveal">
         <p class="tag">Prestations</p>
-        <h1>Une écoute attentive pour comprendre vos attentes.</h1>
-        <p class="lead">
-          Chaque texte requiert une attention spécifique. Qu’il s’agisse
-          d'expliquer, convaincre, transmettre, raconter, corriger ou simplement
-          remettre en forme avec justesse.
-        </p>
+        <h1>Une écoute active pour répondre à vos attentes.</h1>
       </section>
+
       <section class="service-list section">
         <article class="service-row reveal">
           <div class="service-icon">✍</div>
-          <div>
-            <p class="tag">Démarches</p>
-            <h2>Courriers, correspondances et documents administratifs</h2>
-            <p>
-              Je vous aide à formuler une demande, clarifier une situation,
-              rédiger une lettre officielle ou effectuer une démarche.
-              L’objectif est de produire un texte précis, lisible et adapté à
-              son destinataire. Dans ce but, j’ai suivi la formation de l’AEPF,
-              sur la tenue d’une permanences administrative.
-            </p>
-            <ul>
-              <li>Courrier, correspondance, documents administratifs</li>
-              <li>CV</li>
-              <li>Lettres</li>
-            </ul>
+          <div><p class="tag">Démarches</p><h2>Courrier et documents administratifs</h2>
+            <ul><li>Courriers administratifs</li><li>CV</li><li>Lettre de motivation</li></ul>
           </div>
         </article>
-        <style>
-          .service-row {
-            display: grid;
-            grid-template-columns: minmax(0, 1.15fr) minmax(360px, 0.85fr);
-            gap: clamp(50px, 7vw, 110px);
-            align-items: center;
 
-            width: min(1500px, calc(100% - 8vw));
-            margin: 80px auto;
-            padding: clamp(45px, 6vw, 85px);
-
-            background: #fbf8f5;
-            border-radius: 36px;
-            box-shadow: 0 28px 75px rgba(74, 53, 95, 0.11);
-            overflow: hidden;
-          }
-
-          .service-row.reverse {
-            grid-template-columns: minmax(360px, 0.85fr) minmax(0, 1.15fr);
-          }
-
-          .service-row > div {
-            min-width: 0;
-          }
-
-          .service-row h2 {
-            margin: 14px 0 24px;
-            max-width: 900px;
-
-            color: #73549b;
-            font-family: "Playfair Display", serif;
-            font-size: clamp(38px, 4.5vw, 68px);
-            line-height: 1.04;
-          }
-
-          .service-row h3 {
-            margin-top: 24px;
-
-            color: #73549b;
-            font-family: "Playfair Display", serif;
-            font-size: clamp(24px, 2.3vw, 34px);
-            line-height: 1.25;
-          }
-
-          .service-row p:not(.tag) {
-            max-width: 950px;
-
-            color: #625a68;
-            font-size: 17px;
-            line-height: 1.85;
-          }
-
-          .service-row ul {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-
-            margin-top: 22px;
-            padding: 0;
-            list-style: none;
-          }
-
-          .service-row li {
-            padding: 10px 16px;
-
-            color: #73549b;
-            background: #efe6dc;
-            border-radius: 999px;
-
-            font-size: 14px;
-            font-weight: 700;
-          }
-
-          /* Composition des deux photos */
-
-          .bio-images {
-            position: relative;
-
-            width: min(100%, 440px);
-            height: 410px;
-            margin: 0 auto;
-
-            flex-shrink: 0;
-          }
-
-          .bio-images::before {
-            content: "";
-            position: absolute;
-            top: 8px;
-            left: 8px;
-
-            width: 190px;
-            height: 190px;
-
-            background: rgba(181, 186, 166, 0.28);
-            border-radius: 50%;
-          }
-
-          .bio-images::after {
-            content: "";
-            position: absolute;
-            right: 0;
-            bottom: 10px;
-
-            width: 190px;
-            height: 190px;
-
-            border: 2px solid rgba(220, 121, 90, 0.5);
-            border-radius: 50%;
-          }
-
-          .bio-images .photo {
-            position: absolute;
-            overflow: hidden;
-            z-index: 1;
-
-            width: 270px;
-            height: 335px;
-
-            border: 7px solid #fbf8f5;
-            border-radius: 30px;
-            box-shadow: 0 25px 60px rgba(38, 34, 48, 0.22);
-
-            transition:
-              transform 0.45s ease,
-              box-shadow 0.45s ease;
-          }
-
-          .bio-images .photo img {
-            width: 100%;
-            height: 100%;
-
-            display: block;
-            object-fit: cover;
-
-            transition: transform 0.75s ease;
-          }
-
-          .bio-images .photo-back {
-            top: 0;
-            right: 12px;
-
-            transform: rotate(5deg);
-          }
-
-          .bio-images .photo-front {
-            left: 0;
-            bottom: 0;
-            z-index: 2;
-
-            transform: rotate(-5deg);
-          }
-
-          .bio-images .photo:hover {
-            z-index: 4;
-
-            transform: rotate(0deg) translateY(-8px);
-            box-shadow: 0 32px 70px rgba(38, 34, 48, 0.28);
-          }
-
-          .bio-images .photo:hover img {
-            transform: scale(1.07);
-          }
-
-          @media (max-width: 1050px) {
-            .service-row,
-            .service-row.reverse {
-              grid-template-columns: 1fr;
-              gap: 45px;
-            }
-
-            .service-row.reverse .bio-images {
-              order: 2;
-            }
-
-            .service-row.reverse > div:last-child {
-              order: 1;
-            }
-
-            .bio-images {
-              width: min(100%, 460px);
-              height: 390px;
-            }
-          }
-
-          @media (max-width: 650px) {
-            .service-row {
-              width: calc(100% - 28px);
-              margin: 45px auto;
-              padding: 34px 22px;
-              border-radius: 28px;
-            }
-
-            .service-row h2 {
-              font-size: 37px;
-              overflow-wrap: normal;
-              word-break: normal;
-              hyphens: none;
-            }
-
-            .service-row p:not(.tag) {
-              font-size: 16px;
-              line-height: 1.75;
-            }
-
-            .bio-images {
-              width: 100%;
-              max-width: 350px;
-              height: 310px;
-            }
-
-            .bio-images .photo {
-              width: 205px;
-              height: 260px;
-              border-width: 5px;
-              border-radius: 24px;
-            }
-
-            .bio-images .photo-back {
-              right: 5px;
-            }
-
-            .bio-images .photo-front {
-              left: 5px;
-            }
-
-            .bio-images::before,
-            .bio-images::after {
-              width: 135px;
-              height: 135px;
-            }
-
-            .service-row ul {
-              gap: 8px;
-            }
-
-            .service-row li {
-              padding: 9px 13px;
-              font-size: 12px;
-            }
-          }
-
-          @media (max-width: 390px) {
-            .bio-images {
-              height: 280px;
-            }
-
-            .bio-images .photo {
-              width: 180px;
-              height: 230px;
-            }
-          }
-        </style>
         <article class="service-row reverse reveal">
           <div class="bio-images">
-            <div class="photo photo-back">
-              <img src="assets/B1.jpg" alt="Biographie" />
-            </div>
-
-            <div class="photo photo-front">
-              <img src="assets/B2.jpg" alt="Carnets et souvenirs" />
-            </div>
+            <div class="photo photo-back"><img src="assets/B1.jpg" alt="Biographie"
+              onerror="this.src='https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=700&q=85'" /></div>
+            <div class="photo photo-front"><img src="assets/B2.jpg" alt="Carnets et souvenirs"
+              onerror="this.src='https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=700&q=85'" /></div>
           </div>
-          <div>
-            <p class="tag">Transmission</p>
-            <h2>Biographies, récits de vie et souvenirs</h2>
-            <p>
-              Tout peut s’imaginer : la biographie d’un parent dont vous voulez
-              conserver le souvenir, une page de vie significative dont vous
-              voulez garder la trace, un récit de voyage, votre parcours
-              personnel ou professionnel.
-
-              <br />
-
-              Une occasion particulière peut-être prétexte à l’édition d’un
-              ouvrage dédié : mariage, anniversaire, départ à la retraite… Je
-              peux intervenir depuis le recueil des témoignages, jusqu’au livre
-              imprimé. Il est aussi possible de construire la biographie d’une
-              personne disparue ou une biographie familiale.
-            </p>
-
-            <h3>« Chaque vie est un Univers » - Life of Chuck</h3>
-            <ul>
-              <li>livre d'entreprise</li>
-              <li>Récits personnels ou familiaux</li>
-              <li>mémoire d’une commune</li>
-            </ul>
+          <div><p class="tag">Souvenirs et transmission</p><h2>Biographies, récits de vie</h2>
+            <p>Tout peut s’imaginer : la biographie d’un parent dont vous voulez conserver les souvenirs, une page de vie significative dont vous souhaitez garder la trace, un récit de voyage, votre parcours personnel ou professionnel.</p>
+            <p style="margin-top:14px">Une occasion particulière peut être le prétexte à l’édition d’un ouvrage dédié : mariage, anniversaire, départ à la retraite… Je peux intervenir depuis le recueil des témoignages jusqu’au livre imprimé. Il est aussi envisageable de construire la biographie d’une personne disparue ou une biographie familiale.</p>
+            <h3 style="margin-top:20px">« Chaque vie est un univers » — Life of Chuck</h3>
           </div>
         </article>
+
         <article class="service-row reveal">
           <div class="service-icon">⌁</div>
-          <div>
-            <p class="tag">Relecture</p>
-            <h2>Correction de manuscrits, thèses, mémoires et rapports</h2>
-            <p>
-              Je relis, corrige et reformule vos textes pour renforcer leur
-              clarté, leur fluidité et leur niveau de langue, tout en respectant
-              votre propos et votre style.
-            </p>
-            <ul>
-              <li>Orthographe, syntaxe, ponctuation</li>
-              <li>Structure et cohérence</li>
-              <li>Documents littéraires, techniques ou scientifiques</li>
-            </ul>
+          <div><p class="tag">Relecture</p><h2>Correction de manuscrits</h2>
+            <p>Je relis, corrige et reformule vos textes — romans, thèses, mémoires, rapports — pour veiller à leur clarté, leur fluidité et leur niveau de langue, tout en respectant votre propos et votre style. J’apporte un regard extérieur, avec un autre point de vue, pour vous permettre de révéler ce que vous n’aviez pas encore exprimé.</p>
+            <p style="margin-top:14px;font-style:italic">Lorsqu’on répète un morceau de musique, le reprendre de la dernière mesure à la première lui donne parfois un autre éclairage.</p>
+            <ul><li>Orthographe, syntaxe, ponctuation</li><li>Structure et cohérence</li><li>Documents littéraires, techniques ou scientifiques</li></ul>
           </div>
         </article>
+
         <article class="service-row reverse reveal">
           <div class="service-icon">☉</div>
-          <div>
-            <p class="tag">Oral</p>
-            <h2>Discours, notes et textes personnels</h2>
-            <p>
-              Certains textes doivent trouver le bon équilibre entre émotion,
-              naturel et précision : discours, hommages, éloges funèbres, notes,
-              lettres personnelles ou messages délicats.
-            </p>
-            <ul>
-              <li>Discours et prises de parole</li>
-              <li>Éloges et textes sensibles</li>
-              <li>Notes personnelles ou professionnelles</li>
-            </ul>
+          <div><p class="tag">Discours, notes, textes personnels</p><h2>Émotion, naturel et précision</h2>
+            <p>Certains textes doivent trouver leur équilibre entre émotion, naturel et précision : discours, hommages, éloges funèbres, notes, lettres personnelles ou messages délicats.</p>
+            <p style="margin-top:14px">Si vous ne parvenez pas à mettre de l’ordre dans vos idées, je peux intervenir avec recul afin de vous aider à formuler votre pensée en termes appropriés.</p>
+            <ul><li>Discours et prises de parole</li><li>Lettres</li><li>Éloges et textes sensibles</li><li>Notes personnelles ou professionnelles</li></ul>
           </div>
         </article>
+
         <article class="service-row reveal">
           <div class="service-icon">✦</div>
-          <div>
-            <p class="tag">Ateliers</p>
-            <h2>Ateliers d’écriture et animations sur mesure</h2>
-            <p>
-              Inspirés de l’OULIPO, les ateliers sont ludiques, accessibles et
-              pensés pour libérer l’écriture. Ils peuvent être adaptés à un
-              public d’enfants, d’adultes, à une structure culturelle ou à un
-              événement.
-            </p>
-            <ul>
-              <li>Ateliers réguliers</li>
-              <li>Repas littéraires</li>
-              <li>Animations à inventer sur demande</li>
-            </ul>
+          <div><p class="tag">Ateliers</p><h2>Ateliers d’écriture</h2>
+            <h3 style="margin-bottom:16px">Un seul prérequis : savoir utiliser un stylo.</h3>
+            <p>Formes d’écriture variées : brèves, jeux inspirés de l’OuLiPo, récits, lettres, contes, fictions, souvenirs, écriture poétique… Les thèmes abordés et les objectifs sont conçus ou modifiés en fonction des participants.</p>
+            <p style="margin-top:14px">Les contraintes permettent de s’élancer sur la page. La place est donnée à l’expression, sans jugement. La présence du groupe stimule l’imagination et la concentration.</p>
+            <p style="margin-top:14px">On est invité à lire son texte à haute voix, sans aucune obligation. La variété des réponses apportées à une consigne crée un moment de partage parfois étonnant.</p>
+            <p style="margin-top:14px">Un atelier peut être composé de deux à cinq plages d’écriture : échauffement, propositions courtes et une plus longue. Elles sont étayées par des textes issus de la littérature classique et contemporaine, de la poésie, du théâtre ou par tout autre écrit présentant un intérêt. Les séances sont indépendantes.</p>
+            <h3 style="margin-top:20px">« Et le porte-plume redevient oiseau. » — Jacques Prévert</h3>
+          </div>
+        </article>
+
+        <article class="service-row reverse reveal">
+          <div class="service-icon">◎</div>
+          <div><p class="tag">Animations sur mesure</p><h2>Tout peut s’inventer ensemble.</h2>
+            <p>À la demande, je peux proposer des ateliers sur des thèmes précis lors de diverses manifestations. J’anime aussi des repas littéraires, des ateliers-promenades, des ateliers-visites d’exposition, des ateliers d’anniversaire et d’autres formats imaginés avec les structures partenaires.</p>
           </div>
         </article>
       </section>
-      <section class="cta-panel reveal">
-        <div>
-          <p class="tag">Tarifs sur devis</p>
-          <h2>Chaque projet est unique.</h2>
-          <p>
-            Le tarif dépend de la nature du texte, du volume, des délais et du
-            niveau d’accompagnement souhaité.
-          </p>
-        </div>
-        <a class="btn btn-primary" href="contact.html">Demander un devis</a>
-      </section>
+
+      <section class="cta-panel reveal"><div><p class="tag">Tarifs sur devis</p><h2>Chaque projet est unique.</h2><p>Le tarif dépend de la nature du texte, du volume, des délais et du niveau d’accompagnement souhaité.</p></div><a class="btn btn-primary" href="contact.html">Demander un devis</a></section>
+
     </main>
 
     <footer class="footer reveal">
