@@ -70,15 +70,15 @@ img {
 }
 
 .brand img {
-    width: 82px;
-    height: 82px;
+    width: 100px;
+    height: 100px;
     object-fit: contain;
     transition: .3s
 }
 
 .site-header.scrolled .brand img {
-    width: 68px;
-    height: 68px
+    width: 100px;
+    height: 100px
 }
 
 .nav {
