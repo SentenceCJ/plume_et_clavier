@@ -15,6 +15,108 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+
+    <style>
+      /* Logos partenaires sous le certificat Voltaire */
+      .partner-logos {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 24px;
+        margin-top: 30px;
+      }
+
+      .partner-logo-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        text-align: center;
+      }
+
+      .partner-logo-link {
+        width: 118px;
+        height: 118px;
+        display: grid;
+        place-items: center;
+        overflow: hidden;
+        border-radius: 50%;
+        background: #fff;
+        border: 4px solid rgba(122, 92, 138, 0.12);
+        box-shadow: 0 18px 42px rgba(58, 47, 63, 0.12);
+        transition:
+          transform 0.3s ease,
+          box-shadow 0.3s ease,
+          border-color 0.3s ease;
+      }
+
+      .partner-logo-link img {
+        width: 78%;
+        height: 78%;
+        object-fit: contain;
+        transition: transform 0.35s ease;
+      }
+
+      .partner-logo-link:hover,
+      .partner-logo-link:focus-visible {
+        transform: translateY(-7px);
+        border-color: var(--burnt-peach, #cb7640);
+        box-shadow: 0 26px 55px rgba(58, 47, 63, 0.18);
+        outline: none;
+      }
+
+      .partner-logo-link:hover img,
+      .partner-logo-link:focus-visible img {
+        transform: scale(1.07);
+      }
+
+      .partner-logo-name {
+        color: var(--deep-lilac, #7a5c8a);
+        font-size: 14px;
+        font-weight: 800;
+      }
+
+      @media (max-width: 650px) {
+        .partner-logos {
+          grid-template-columns: repeat(3, 1fr);
+          gap: 14px;
+        }
+
+        .partner-logo-link {
+          width: 86px;
+          height: 86px;
+          border-width: 3px;
+        }
+
+        .partner-logo-name {
+          font-size: 12px;
+        }
+      }
+
+      @media (max-width: 390px) {
+        .partner-logo-link {
+          width: 76px;
+          height: 76px;
+        }
+
+        .partner-logo-name {
+          font-size: 11px;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .partner-logo-link,
+        .partner-logo-link img {
+          transition: none;
+        }
+
+        .partner-logo-link:hover,
+        .partner-logo-link:focus-visible,
+        .partner-logo-link:hover img,
+        .partner-logo-link:focus-visible img {
+          transform: none;
+        }
+      }
+    </style>
   </head>
   <body>
     <header class="site-header" data-header>
@@ -42,22 +144,28 @@
     </header>
 
     <main>
-
       <section class="page-hero reveal">
         <p class="tag">Qui suis-je ?</p>
         <h1>Marianne Lamor,<br />une plume vagabonde.</h1>
         <p class="lead">
-          De l’amour de la lecture à celui de l’écriture, du plaisir de la rencontre
-          et de l’échange à celui de l’écoute et du service. L’écrivain public écrit
-          pour les autres et à la place des autres. Alors, aujourd’hui, j’écris à
-          votre place, j’écris pour vous ou je vous fais écrire.
+          De l’amour de la lecture à celui de l’écriture, du plaisir de la
+          rencontre et de l’échange à celui de l’écoute et du service.
+          L’écrivain public écrit pour les autres et à la place des autres.
+          Alors, aujourd’hui, j’écris à votre place, j’écris pour vous ou je
+          vous fais écrire.
         </p>
       </section>
 
       <section class="profile-layout section">
         <div class="profile-image reveal">
-          <img src="assets/marianne2.jpg" alt="Portrait de Marianne Lamor"
-            onerror="this.src='https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=900&q=85'" />
+          <img
+            src="assets/marianne2.jpg"
+            alt="Portrait de Marianne Lamor"
+            onerror="
+              this.src =
+                'https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=900&q=85'
+            "
+          />
           <div class="image-caption">Marianne Lamor</div>
           <div class="image-caption">Crédit photo : François Mazaleyrat</div>
         </div>
@@ -65,21 +173,72 @@
         <div class="profile-text reveal delay-1">
           <p class="tag">Présentation</p>
           <h2>Des sciences aux mots, le goût de la clarté.</h2>
-          <p>Ma première activité ? Professeure de mathématiques et de sciences physiques. En parallèle, j’ai toujours écrit et corrigé des documents littéraires, techniques et scientifiques.</p>
-          <p>J’ai choisi cette activité d’écrivaine publique parce qu’elle conjugue des compétences diverses. Les ateliers d’écriture demandent un savoir-faire que j’ai acquis dans mon métier précédent. J’y ajoute une épice ludique.</p>
-          <p>L’écriture fait partie de ma vie depuis ma petite enfance, lorsque j’imitais ma mère qui écrivait des lettres debout devant le buffet. À l’internat, dès l’âge de dix ans, écrire des lettres était mon refuge contre l’ennui et la solitude.</p>
-          <p>Je relis, corrige et reformule, si nécessaire, vos thèses, rapports et romans. À votre écoute, je rédige pour vous discours, notes, lettres administratives ou personnelles, récits de vie, d’événements, de voyages et autres textes.</p>
+          <p>
+            Ma première activité ? Professeure de mathématiques et de sciences
+            physiques. En parallèle, j’ai toujours écrit et corrigé des
+            documents littéraires, techniques et scientifiques.
+          </p>
+          <p>
+            J’ai choisi cette activité d’écrivaine publique parce qu’elle
+            conjugue des compétences diverses. Les ateliers d’écriture demandent
+            un savoir-faire que j’ai acquis dans mon métier précédent. J’y
+            ajoute une épice ludique.
+          </p>
+          <p>
+            L’écriture fait partie de ma vie depuis ma petite enfance, lorsque
+            j’imitais ma mère qui écrivait des lettres debout devant le buffet.
+            À l’internat, dès l’âge de dix ans, écrire des lettres était mon
+            refuge contre l’ennui et la solitude.
+          </p>
+          <p>
+            Je relis, corrige et reformule, si nécessaire, vos thèses, rapports
+            et romans. À votre écoute, je rédige pour vous discours, notes,
+            lettres administratives ou personnelles, récits de vie,
+            d’événements, de voyages et autres textes.
+          </p>
 
           <div class="voltaire-badge">
             <strong>Certificat Voltaire</strong>
             <span>Niveau expert — 3GGG4AL</span>
           </div>
+          <div
+            class="partner-logos"
+            aria-label="Réseaux et affiliations professionnelles"
+          >
+            <div class="partner-logo-card">
+              <a
+                class="partner-logo-link"
+                href="https://ecrivains-publics.fr/mlamor/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visiter le site de l’AEPF"
+              >
+                <img src="assets/aepf.png" alt="Logo AEPF" />
+              </a>
+              <span class="partner-logo-name">AEPF</span>
+            </div>
 
-          <div class="partner-grid">
-            <div class="partner-card"><a href="https://www.ecrivains-publics.fr/" target="_blank" rel="noopener">AEPF</a></div>
-            <div class="partner-card">SNPCE</div>
-            <div class="partner-card">CALM</div>
-            <div class="partner-card">Certificat Voltaire</div>
+            <div class="partner-logo-card">
+              <a
+                class="partner-logo-link"
+                href="https://www.snpce.fr/"
+                aria-label="Visiter le site du SNPCE"
+              >
+                <img src="assets/sncpe.jpg" alt="Logo SNPCE" />
+              </a>
+              <span class="partner-logo-name">SNPCE</span>
+            </div>
+
+            <div class="partner-logo-card">
+              <a
+                class="partner-logo-link"
+                href="#"
+                aria-label="Découvrir le collectif CALM"
+              >
+                <img src="assets/calm.png" alt="Logo du collectif CALM" />
+              </a>
+              <span class="partner-logo-name">CALM</span>
+            </div>
           </div>
         </div>
       </section>
@@ -101,11 +260,19 @@
       </section>
 
       <section class="values-strip reveal">
-        <article><h3>Écoute</h3><p>Comprendre la demande et trouver un accord.</p></article>
-        <article><h3>Précision</h3><p>Produire des textes clairs et structurés.</p></article>
-        <article><h3>Discrétion</h3><p>Respecter chacun selon la charte de déontologie de l’AEPF.</p></article>
+        <article>
+          <h3>Écoute</h3>
+          <p>Comprendre la demande et trouver un accord.</p>
+        </article>
+        <article>
+          <h3>Précision</h3>
+          <p>Produire des textes clairs et structurés.</p>
+        </article>
+        <article>
+          <h3>Discrétion</h3>
+          <p>Respecter chacun selon la charte de déontologie de l’AEPF.</p>
+        </article>
       </section>
-
     </main>
 
     <footer class="footer reveal">
