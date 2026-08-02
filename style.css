@@ -701,16 +701,7 @@ button:hover {
     overflow: hidden
 }
 
-.news-feature aside::before {
-    content: "";
-    position: absolute;
-    right: -70px;
-    top: -80px;
-    width: 230px;
-    height: 230px;
-    border-radius: 50%;
-    border: 2px solid rgba(203, 118, 64, .6)
-}
+
 
 .news-feature aside strong {
     font-family: "Playfair Display", serif;
