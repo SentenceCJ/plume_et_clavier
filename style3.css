@@ -1497,13 +1497,15 @@ textarea {
           }
 
 /* =========================================================
-   SECTION ATELIERS — A1 EN FORMAT PAYSAGE, SANS ZOOM
+   SECTION ATELIERS — COMPOSITION A1 + A3 AGRANDIE
+   Cette surcharge place le visuel à une taille comparable
+   à la colonne de texte, sans modifier les autres prestations.
 ========================================================= */
 
 .service-row:has(.service-visual-double) {
     grid-template-columns: minmax(520px, 1fr) minmax(0, 1fr);
     gap: clamp(50px, 6vw, 90px);
-    align-items: center;
+    align-items: stretch;
 }
 
 .service-row:has(.service-visual-double) > div:last-child {
@@ -1512,20 +1514,22 @@ textarea {
 
 .service-visual-double {
     position: relative;
-    width: 100%;
-    max-width: 720px;
-    min-height: 610px;
+    width:100%;
+    max-width:760px;
+    min-height:820px;
+    height: 100%;
     margin: 0 auto;
+    align-self: stretch;
     isolation: isolate;
 }
 
 .service-visual-double::before {
     content: "";
     position: absolute;
-    top: 28px;
-    left: 12px;
-    width: 250px;
-    height: 250px;
+    top: 42px;
+    left: 18px;
+    width: 270px;
+    height: 270px;
     border-radius: 50%;
     background: rgba(90, 138, 114, .24);
     pointer-events: none;
@@ -1534,10 +1538,10 @@ textarea {
 .service-visual-double::after {
     content: "";
     position: absolute;
-    right: 20px;
-    bottom: 42px;
-    width: 270px;
-    height: 270px;
+    right: 18px;
+    bottom: 48px;
+    width: 290px;
+    height: 290px;
     border: 2px solid rgba(203, 118, 64, .58);
     border-radius: 50%;
     pointer-events: none;
@@ -1548,81 +1552,70 @@ textarea {
     overflow: hidden;
     border: 8px solid var(--soft-white);
     border-radius: 36px;
-    background: var(--soft-white);
+    background: var(--linen);
     box-shadow: 0 32px 78px rgba(58, 47, 63, .23);
     transition:
         transform .48s ease,
         box-shadow .48s ease;
 }
 
-/* A1 conserve toujours son ratio naturel */
-.service-visual-double .service-photo-main {
-    z-index: 1;
-    top: 36px;
-    right: 0;
-    width: min(100%, 620px);
-    height: auto;
-    transform: rotate(3deg);
-}
-
-.service-visual-double .service-photo-main img {
-    display: block;
+.service-visual-double .service-photo img {
     width: 100%;
-    height: auto;
-    object-fit: contain;
-    object-position: center;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .75s ease;
 }
 
-/* A3 reste superposée */
+.service-visual-double .service-photo-main {
+    width:560px;
+    height:430px;   /* moins haut */
+    
+    top:40px;
+    right:0;
+
+    transform:rotate(4deg);
+
+    border-radius:36px;
+}
+
 .service-visual-double .service-photo-overlay {
     z-index: 2;
     left: 0;
     bottom: 18px;
-    width: 340px;
-    height: 430px;
+    width: 350px;
+    height: 445px;
     transform: rotate(-5deg);
-}
-
-.service-visual-double .service-photo-overlay img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    transition: transform .75s ease;
 }
 
 .service-visual-double .service-photo:hover {
     z-index: 5;
-    transform: rotate(0deg) translateY(-9px);
+    transform: rotate(0deg) translateY(-10px);
     box-shadow: 0 40px 90px rgba(58, 47, 63, .29);
 }
 
-.service-visual-double .service-photo-main:hover img {
-    transform: none;
-}
-
-.service-visual-double .service-photo-overlay:hover img {
-    transform: scale(1.05);
+.service-visual-double .service-photo:hover img {
+    transform: scale(1.06);
 }
 
 @media (max-width: 1200px) {
     .service-row:has(.service-visual-double) {
-        grid-template-columns: minmax(430px, .95fr) minmax(0, 1.05fr);
-        gap: 46px;
+        grid-template-columns: minmax(440px, .95fr) minmax(0, 1.05fr);
+        gap: 48px;
     }
 
     .service-visual-double {
-        max-width: 600px;
-        min-height: 535px;
+        max-width: 560px;
+        min-height: 650px;
     }
 
     .service-visual-double .service-photo-main {
-        width: min(100%, 520px);
+        width: 400px;
+        height: 520px;
     }
 
     .service-visual-double .service-photo-overlay {
-        width: 285px;
-        height: 360px;
+        width: 310px;
+        height: 390px;
     }
 }
 
@@ -1642,89 +1635,86 @@ textarea {
     }
 
     .service-visual-double {
-        width: min(100%, 680px);
-        max-width: 680px;
-        min-height: 575px;
+        width: min(100%, 620px);
+        min-height: 650px;
     }
 
     .service-visual-double .service-photo-main {
-        top: 24px;
-        right: 0;
-        width: min(100%, 590px);
+        width: 420px;
+        height: 535px;
     }
 
     .service-visual-double .service-photo-overlay {
-        width: 300px;
-        height: 380px;
+        width: 325px;
+        height: 405px;
     }
 }
 
 @media (max-width: 650px) {
     .service-row:has(.service-visual-double) {
-        gap: 28px;
+        gap: 30px;
     }
 
     .service-visual-double {
         width: 100%;
-        max-width: 360px;
-        min-height: 360px;
+        max-width: 365px;
+        min-height: 440px;
     }
 
     .service-visual-double::before,
     .service-visual-double::after {
-        width: 135px;
-        height: 135px;
+        width: 155px;
+        height: 155px;
     }
 
     .service-visual-double::before {
-        top: 14px;
-        left: 2px;
+        top: 20px;
+        left: 5px;
     }
 
     .service-visual-double::after {
-        right: 2px;
-        bottom: 12px;
+        right: 4px;
+        bottom: 18px;
     }
 
     .service-visual-double .service-photo {
         border-width: 5px;
-        border-radius: 25px;
+        border-radius: 26px;
     }
 
     .service-visual-double .service-photo-main {
         top: 8px;
-        right: 0;
-        width: 100%;
-        height: auto;
-        transform: rotate(1.5deg);
-    }
-
-    .service-visual-double .service-photo-main img {
-        width: 100%;
-        height: auto;
-        object-fit: contain;
+        right: 4px;
+        width: 280px;
+        height: 360px;
     }
 
     .service-visual-double .service-photo-overlay {
         left: 0;
-        bottom: 2px;
-        width: 175px;
-        height: 220px;
-        transform: rotate(-5deg);
+        bottom: 8px;
+        width: 218px;
+        height: 280px;
     }
 }
 
 @media (max-width: 390px) {
     .service-visual-double {
-        max-width: 315px;
-        min-height: 320px;
+        max-width: 320px;
+        min-height: 395px;
+    }
+
+    .service-visual-double .service-photo-main {
+        width: 245px;
+        height: 315px;
     }
 
     .service-visual-double .service-photo-overlay {
-        width: 150px;
-        height: 190px;
+        width: 190px;
+        height: 240px;
     }
 }
+
+
 
 /* =========================================================
    PRESTATIONS — PHOTOS SIMPLES
@@ -1882,187 +1872,3 @@ textarea {
     }
 }
 
-/* ==========================
-   Galerie Ateliers
-========================== */
-
-.atelier-gallery{
-
-    margin:140px auto;
-
-}
-
-.gallery-heading{
-
-    max-width:720px;
-    margin:0 auto 70px;
-
-    text-align:center;
-
-}
-
-.gallery-heading h2{
-
-    margin:18px 0;
-
-}
-
-.gallery-grid{
-
-    display:grid;
-
-    grid-template-columns:repeat(2,1fr);
-
-    gap:40px;
-
-}
-
-.gallery-card{
-
-    position:relative;
-
-    overflow:hidden;
-
-    border-radius:34px;
-
-    background:white;
-
-    box-shadow:0 24px 60px rgba(50,45,55,.12);
-
-    transition:.45s;
-
-}
-
-.gallery-card:hover{
-
-    transform:translateY(-10px);
-
-    box-shadow:0 40px 80px rgba(50,45,55,.16);
-
-}
-
-.gallery-card img{
-
-    width:100%;
-
-    height:480px;
-
-    object-fit:cover;
-
-    transition:.7s;
-
-}
-
-.gallery-card:hover img{
-
-    transform:scale(1.06);
-
-}
-
-.gallery-card::before{
-
-    content:"";
-
-    position:absolute;
-
-    width:170px;
-    height:170px;
-
-    border-radius:50%;
-
-    border:2px solid rgba(203,118,64,.45);
-
-    top:-60px;
-    right:-60px;
-
-}
-
-.gallery-card::after{
-
-    content:"";
-
-    position:absolute;
-
-    width:90px;
-    height:90px;
-
-    border-radius:50%;
-
-    background:rgba(180,187,166,.25);
-
-    left:18px;
-    bottom:95px;
-
-}
-
-.gallery-card figcaption{
-
-    padding:26px 28px;
-
-    background:white;
-
-    position:relative;
-
-    z-index:2;
-
-}
-
-.gallery-card h3{
-
-    margin:0 0 8px;
-
-    font-size:28px;
-
-}
-
-.gallery-card span{
-
-    color:#777;
-
-    font-size:14px;
-
-    letter-spacing:.3px;
-
-}
-
-.section-container {
-  width: min(1500px, calc(100% - 8vw));
-  margin: 80px auto;
-}
-@media(max-width:900px){
-
-.gallery-grid{
-
-    grid-template-columns:1fr;
-
-}
-
-.gallery-card img{
-
-    height:400px;
-
-}
-
-}
-
-@media(max-width:600px){
-
-.gallery-card{
-
-    border-radius:24px;
-
-}
-
-.gallery-card img{
-
-    height:300px;
-
-}
-
-.gallery-card h3{
-
-    font-size:24px;
-
-}
-
-}
