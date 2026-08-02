@@ -1,71 +1,246 @@
 <!doctype html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tarifs - Plume et Clavier</title>
-  <meta name="description" content="Plume et Clavier, écrivaine publique : rédaction, correction, ateliers d'écriture, biographies et accompagnement par les mots." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-
-<header class="site-header" data-header>
-  <input type="checkbox" id="menu-toggle" class="menu-toggle" />
-  <label for="menu-toggle" class="burger" aria-label="Ouvrir le menu"><span></span><span></span><span></span></label>
-  <a href="index.html" class="brand" aria-label="Accueil Plume et Clavier">
-    <img src="assets/logo.png" alt="Plume et Clavier - Écrivaine publique" />
-  </a>
-  <nav class="nav" aria-label="Navigation principale">
-    <a href="index.html" data-page="index">Accueil</a>
-    <a href="qui-suis-je.html" data-page="qui">Qui suis-je ?</a>
-    <a href="prestations.html" data-page="prestations">Prestations</a>
-    <a href="actualites.html" data-page="actualites">Actualités</a>
-    <a href="tarifs.html" data-page="tarifs" class="active">Tarifs</a>
-    <a href="coin-culture.html" data-page="culture">Coin culture</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarifs - Plume et Clavier</title>
+    <meta
+      name="description"
+      content="Plume et Clavier, écrivaine publique : rédaction, correction, ateliers d'écriture, biographies et accompagnement par les mots."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="burger" aria-label="Ouvrir le menu"
+        ><span></span><span></span><span></span
+      ></label>
+      <a href="index.html" class="brand" aria-label="Accueil Plume et Clavier">
+        <img
+          src="assets/logo.png"
+          alt="Plume et Clavier - Écrivaine publique"
+        />
+      </a>
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="index.html" data-page="index">Accueil</a>
+        <a href="qui-suis-je.html" data-page="qui">Qui suis-je ?</a>
+        <a href="prestations.html" data-page="prestations">Prestations</a>
+        <a href="actualites.html" data-page="actualites">Actualités</a>
+        <a href="tarifs.html" data-page="tarifs" class="active">Tarifs</a>
+        <a href="coin-culture.html" data-page="culture">Coin culture</a>
         <a href="contact.html" data-page="contact">Contact</a>
-  </nav>
-</header>
+      </nav>
+    </header>
 
-<main>
+    <main>
+      <section class="page-hero reveal">
+        <p class="tag">Tarifs</p>
+        <h1>Des tarifs établis en fonction de votre projet.</h1>
+        <p class="lead">
+          Le temps de travail est différent selon la prestation. Les tarifs sont
+          donc proposés sur devis, après un premier échange.
+        </p>
+      </section>
+      <section class="section">
+        <div class="price-intro reveal">
+          <p class="tag">Premier entretien offert</p>
+          <h2>Une heure pour cerner votre demande.</h2>
+          <p>
+            Le prix dépend notamment du volume à traiter, du niveau de
+            réécriture, du nombre d’entretiens, du délai souhaité et du format
+            final attendu. Le premier entretien, d’une heure, est gratuit.
+          </p>
+        </div>
+      </section>
+      <section class="section" style="background: rgba(90, 138, 114, 0.13)">
+        <div class="section-heading reveal">
+          <p class="tag">Foire aux questions</p>
+          <h2>
+            Des réponses aux questions que vous vous posez… ou pas encore.
+          </h2>
+          <p class="lead">
+            Ici, des réponses à des questions que vous vous posez, que vous ne
+            vous posez pas encore, que vous pourriez me poser ou que je me pose.
+          </p>
+        </div>
+        <div class="faq">
+          <details open>
+            <summary>Un atelier d’écriture, à quoi ça sert ?</summary>
+            <p>
+              L’atelier d’écriture ne fera pas nécessairement de vous un
+              écrivain. On y écrit en se laissant entraîner par son stylo et par
+              les contraintes proposées. C’est un moment d’échange et de
+              confrontation des idées. Écrire permet de forger et de fortifier
+              sa pensée. Les ateliers sont souvent ludiques et prétextes à
+              découvertes. Le groupe est stimulant. Les textes produits peuvent
+              ensuite être réécrits, relus et corrigés dans un travail
+              individuel.
+            </p>
+          </details>
+          <details>
+            <summary>
+              Je n’ai jamais eu l’habitude d’écrire. Puis-je participer à un
+              atelier ?
+            </summary>
+            <p>
+              Bien sûr. Les ateliers sont ouverts à tous et il n’y a jamais de
+              bonne ou de mauvaise réponse.
+            </p>
+          </details>
+          <details>
+            <summary>Les ateliers sont-ils ouverts aux adolescents ?</summary>
+            <p>
+              Oui. Je peux animer des ateliers spécifiques pour les adolescents.
+              À partir de douze ans, les plus jeunes peuvent également rejoindre
+              certains groupes d’adultes. Le mélange des générations est souvent
+              fertile.
+            </p>
+          </details>
+          <details>
+            <summary>Depuis quand êtes-vous écrivaine publique ?</summary>
+            <p>
+              J’exerce cette activité avec le statut d’auto-entrepreneur depuis
+              2022. Auparavant, comme Monsieur Jourdain avec la prose, j’étais
+              écrivaine publique sans le savoir.
+            </p>
+          </details>
+          <details>
+            <summary>Combien coûte une biographie ?</summary>
+            <p>
+              La rédaction d’une biographie est une tâche longue et exigeante.
+              Une heure d’entretien requiert environ cinq heures de travail.
+              Pour dix heures d’entretien, il faut compter un minimum de 2 500
+              €, hors livre imprimé. Les recherches, photos, annexes ou arbre
+              généalogique peuvent faire évoluer le prix. Tout est détaillé dans
+              un devis et un contrat.
+            </p>
+          </details>
+          <details>
+            <summary>Comment se passe une biographie ?</summary>
+            <p>
+              La première heure, gratuite, permet de faire le point. Les
+              entretiens suivants sont guidés et enregistrés. Je retranscris
+              intégralement, puis j’écris lorsque les entretiens sont terminés
+              afin de structurer le récit. Les enregistrements sont effacés une
+              fois l’ouvrage terminé.
+            </p>
+          </details>
+          <details>
+            <summary>Et l’intelligence artificielle dans tout ça ?</summary>
+            <p>
+              Je suis de la génération de l’IRIS 80, des cartes perforées et du
+              22 à Asnières ! <br />
+              Pour mes corrections, j’utilise l’outil Antidote, c’est un
+              défrichage dans la correction et la reformulation, j’y ajoute ma
+              plume.
+            </p>
+          </details>
+          <details>
+            <summary>
+              Je veux écrire le roman de ma vie, pouvez-vous m’aider ?
+            </summary>
+            <p>
+              Oui. Nous définirons ensemble vos objectifs, des rendez-vous de
+              travail et un mode d’accompagnement vous permettant d’avancer.
+            </p>
+          </details>
+          <details>
+            <summary>
+              La confidentialité des échanges est-elle garantie ?
+            </summary>
+            <p>
+              Oui. Les membres de l’AEPF respectent une charte de déontologie
+              qui garantit la confidentialité des informations personnelles.
+            </p>
+          </details>
+          <details>
+            <summary>Quel est votre code APE ?</summary>
+            <p>
+              Mon code APE actuel est 96.09Z, « Autres services personnels ». À
+              compter du 1er janvier 2027, le code NAF 2025 sera 96.99H, «
+              Toutes les autres activités de service aux personnes ».
+            </p>
+          </details>
+          <details>
+            <summary>
+              Puis-je vous faire lire mes textes pour savoir ce que vous en
+              pensez ?
+            </summary>
+            <p>
+              Oui. Cette lecture et le compte rendu sont facturés au temps
+              passé. Mon regard se veut neutre et professionnel.
+            </p>
+          </details>
+          <details>
+            <summary>
+              Si l’on commence ma biographie demain, quand peut-elle être
+              terminée ?
+            </summary>
+            <p>
+              Pour une biographie complète, de la naissance à aujourd’hui, il
+              faut généralement compter environ six mois. Il faut tenir compte
+              des entretiens, de la transcription, de l’écriture, de la mise en
+              page et du délai d’impression.
+            </p>
+          </details>
+          <details>
+            <summary>
+              Comment se passe l’impression d’un livre et combien cela
+              coûte-t-il ?
+            </summary>
+            <p>
+              Je travaille avec deux plateformes d’imprimeurs toulousains.
+              L’imprimeur fournit un devis selon le type d’ouvrage. Après
+              validation, l’impression est lancée. Ces entreprises offrent
+              l’avantage d’une communication facile et d’un interlocuteur
+              disponible.
+            </p>
+          </details>
+        </div>
+      </section>
+      <section class="cta-panel reveal">
+        <div>
+          <p class="tag">Premier contact</p>
+          <h2>Un projet à estimer ?</h2>
+          <p>Envoyez quelques informations sur votre besoin.</p>
+        </div>
+        <a class="btn btn-primary" href="contact.html">Demander un devis</a>
+      </section>
+    </main>
 
-<section class="page-hero reveal"><p class="tag">Tarifs</p><h1>Des tarifs établis en fonction de votre projet.</h1><p class="lead">Le temps de travail est différent selon la prestation. Les tarifs sont donc proposés sur devis, après un premier échange.</p></section>
-<section class="section"><div class="price-intro reveal"><p class="tag">Premier entretien offert</p><h2>Une heure pour cerner votre demande.</h2><p>Le prix dépend notamment du volume à traiter, du niveau de réécriture, du nombre d’entretiens, du délai souhaité et du format final attendu. Le premier entretien, d’une heure, est gratuit.</p></div></section>
-<section class="section" style="background:rgba(90,138,114,.13)"><div class="section-heading reveal"><p class="tag">Foire aux questions</p><h2>Des réponses aux questions que vous vous posez… ou pas encore.</h2><p class="lead">Ici, des réponses à des questions que vous vous posez, que vous ne vous posez pas encore, que vous pourriez me poser ou que je me pose.</p></div><div class="faq"><details open><summary>Un atelier d’écriture, à quoi ça sert ?</summary><p>L’atelier d’écriture ne fera pas nécessairement de vous un écrivain. On y écrit en se laissant entraîner par son stylo et par les contraintes proposées. C’est un moment d’échange et de confrontation des idées. Écrire permet de forger et de fortifier sa pensée. Les ateliers sont souvent ludiques et prétextes à découvertes. Le groupe est stimulant. Les textes produits peuvent ensuite être réécrits, relus et corrigés dans un travail individuel.</p></details>
-<details><summary>Je n’ai jamais eu l’habitude d’écrire. Puis-je participer à un atelier ?</summary><p>Bien sûr. Les ateliers sont ouverts à tous et il n’y a jamais de bonne ou de mauvaise réponse.</p></details>
-<details><summary>Les ateliers sont-ils ouverts aux adolescents ?</summary><p>Oui. Je peux animer des ateliers spécifiques pour les adolescents. À partir de douze ans, les plus jeunes peuvent également rejoindre certains groupes d’adultes. Le mélange des générations est souvent fertile.</p></details>
-<details><summary>Depuis quand êtes-vous écrivaine publique ?</summary><p>J’exerce cette activité avec le statut d’auto-entrepreneur depuis 2022. Auparavant, comme Monsieur Jourdain avec la prose, j’étais écrivaine publique sans le savoir.</p></details>
-<details><summary>Combien coûte une biographie ?</summary><p>La rédaction d’une biographie est une tâche longue et exigeante. Une heure d’entretien requiert environ cinq heures de travail. Pour dix heures d’entretien, il faut compter un minimum de 2 500 €, hors livre imprimé. Les recherches, photos, annexes ou arbre généalogique peuvent faire évoluer le prix. Tout est détaillé dans un devis et un contrat.</p></details>
-<details><summary>Comment se passe une biographie ?</summary><p>La première heure, gratuite, permet de faire le point. Les entretiens suivants sont guidés et enregistrés. Je retranscris intégralement, puis j’écris lorsque les entretiens sont terminés afin de structurer le récit. Les enregistrements sont effacés une fois l’ouvrage terminé.</p></details>
-<details><summary>Et l’IA dans tout ça ?</summary><p>Pour mes corrections, j’utilise Antidote comme outil de défrichage avant d’ajouter ma plume. J’aime écrire, chercher et résoudre des problèmes. Pour les entretiens enregistrés, un outil d’IA peut être utilisé pour produire le verbatim ; la structure, le style et l’écriture restent humains.</p></details>
-<details><summary>Je veux écrire le roman de ma vie, pouvez-vous m’aider ?</summary><p>Oui. Nous définirons ensemble vos objectifs, des rendez-vous de travail et un mode d’accompagnement vous permettant d’avancer.</p></details>
-<details><summary>La confidentialité des échanges est-elle garantie ?</summary><p>Oui. Les membres de l’AEPF respectent une charte de déontologie qui garantit la confidentialité des informations personnelles.</p></details>
-<details><summary>Quel est votre code APE ?</summary><p>Mon code APE actuel est 96.09Z, « Autres services personnels ». À compter du 1er janvier 2027, le code NAF 2025 sera 96.99H, « Toutes les autres activités de service aux personnes ».</p></details>
-<details><summary>Puis-je vous faire lire mes textes pour savoir ce que vous en pensez ?</summary><p>Oui. Cette lecture et le compte rendu sont facturés au temps passé. Mon regard se veut neutre et professionnel.</p></details>
-<details><summary>Si l’on commence ma biographie demain, quand peut-elle être terminée ?</summary><p>Pour une biographie complète, de la naissance à aujourd’hui, il faut généralement compter environ six mois. Il faut tenir compte des entretiens, de la transcription, de l’écriture, de la mise en page et du délai d’impression.</p></details>
-<details><summary>Comment se passe l’impression d’un livre et combien cela coûte-t-il ?</summary><p>Je travaille avec deux plateformes d’imprimeurs toulousains. L’imprimeur fournit un devis selon le type d’ouvrage. Après validation, l’impression est lancée. Ces entreprises offrent l’avantage d’une communication facile et d’un interlocuteur disponible.</p></details></div></section>
-<section class="cta-panel reveal"><div><p class="tag">Premier contact</p><h2>Un projet à estimer ?</h2><p>Envoyez quelques informations sur votre besoin.</p></div><a class="btn btn-primary" href="contact.html">Demander un devis</a></section>
+    <footer class="footer reveal">
+      <div>
+        <img class="footer-logo" src="assets/logo.png" alt="Plume et Clavier" />
+        <p>© Plume et Clavier — Écrivaine publique</p>
+      </div>
+      <div class="footer-links">
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="cgv.html">CGV</a>
+      </div>
+      <div class="socials">
+        <a href="#" aria-label="Instagram"
+          ><svg viewBox="0 0 24 24">
+            <path
+              d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 4a4 4 0 1 1 0 8 4 4 0 0 1 0-8Zm0 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm5.25-2.75a1 1 0 1 1 0 2 1 1 0 0 1 0-2Z"
+            /></svg
+        ></a>
+        <a href="#" aria-label="LinkedIn"
+          ><svg viewBox="0 0 24 24">
+            <path
+              d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.6h.05c.53-1 1.84-2.05 3.8-2.05 4.06 0 4.81 2.67 4.81 6.14V21h-4v-5.59c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.95V21h-4V9Z"
+            /></svg
+        ></a>
+      </div>
+      <p class="credit">Site réalisé par Antoine Macheda</p>
+    </footer>
 
-</main>
-
-<footer class="footer reveal">
-  <div>
-    <img class="footer-logo" src="assets/logo.png" alt="Plume et Clavier" />
-    <p>© Plume et Clavier — Écrivaine publique</p>
-  </div>
-  <div class="footer-links">
-    <a href="mentions-legales.html">Mentions légales</a>
-    <a href="cgv.html">CGV</a>
-  </div>
-  <div class="socials">
-    <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 4a4 4 0 1 1 0 8 4 4 0 0 1 0-8Zm0 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm5.25-2.75a1 1 0 1 1 0 2 1 1 0 0 1 0-2Z"/></svg></a>
-    <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.6h.05c.53-1 1.84-2.05 3.8-2.05 4.06 0 4.81 2.67 4.81 6.14V21h-4v-5.59c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.95V21h-4V9Z"/></svg></a>
-  </div>
-  <p class="credit">Site réalisé par Antoine Macheda</p>
-</footer>
-
-<script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

@@ -1770,7 +1770,7 @@ textarea {
         filter .45s ease;
 }
 
-.service-visual-single::before {
+/* .service-visual-single::before {
     content: "";
     position: absolute;
     z-index: 2;
@@ -1785,7 +1785,7 @@ textarea {
     border-radius: 50%;
 
     pointer-events: none;
-}
+} */
 
 .service-visual-single::after {
     content: "";
