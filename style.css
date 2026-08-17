@@ -1778,23 +1778,7 @@ textarea {
     pointer-events: none;
 } */
 
-.service-visual-single::after {
-    content: "";
-    position: absolute;
-    z-index: 2;
 
-    left: 18px;
-    bottom: 18px;
-
-    width: 68px;
-    height: 68px;
-
-    border-radius: 50%;
-    background: rgba(90, 138, 114, .18);
-    backdrop-filter: blur(4px);
-
-    pointer-events: none;
-}
 
 .service-visual-single:hover {
     z-index: 4;
@@ -1916,7 +1900,7 @@ textarea {
 
     border-radius:34px;
 
-    background:white;
+    background:rgb(62, 8, 211);
 
     box-shadow:0 24px 60px rgba(50,45,55,.12);
 
@@ -1968,7 +1952,7 @@ textarea {
 
 }
 
-.gallery-card::after{
+/* .gallery-card::after{
 
     content:"";
 
@@ -1979,12 +1963,12 @@ textarea {
 
     border-radius:50%;
 
-    background:rgba(180,187,166,.25);
+    background:rgb(68, 0, 255);
 
     left:18px;
     bottom:95px;
 
-}
+} */
 
 .gallery-card figcaption{
 
